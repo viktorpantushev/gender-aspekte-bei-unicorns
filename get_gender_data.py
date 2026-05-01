@@ -24,10 +24,12 @@ def get_founder_gender(founder_string):
         first_name = name.split(' ')[0]
         predicted_gender = d.get_gender(first_name)
 
+        print(predicted_gender)
+
         # Map 'mostly_*' to full genders; treat 'andy' and 'unknown' as 'unknown'
         if predicted_gender in ('andy', 'unknown'):
             genders.append('unknown')
-        elif predicted_gender == 'mostly_male':
+        elif predicted_gender in ('mostly_male'):
             genders.append('male')
         elif predicted_gender == 'mostly_female':
             genders.append('female')
