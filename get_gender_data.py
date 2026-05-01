@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import gender_guesser.detector as gender
 import pandas as pd
 
-
 def get_founder_gender(founder_string):
     d = gender.Detector(case_sensitive=False)
 
@@ -24,9 +23,15 @@ def get_founder_gender(founder_string):
         # Take the first name to guess gender
         first_name = name.split(' ')[0]
         predicted_gender = d.get_gender(first_name)
-        # Treat 'andy' as 'unknown'
-        if predicted_gender == 'andy':
+
+        # Map 'mostly_*' to full genders; treat 'andy' and 'unknown' as 'unknown'
+        if predicted_gender in ('andy', 'unknown'):
             genders.append('unknown')
+        elif predicted_gender == 'mostly_male':
+            genders.append('male')
+        elif predicted_gender == 'mostly_female':
+            genders.append('female')
         else:
             genders.append(predicted_gender)
+
     return genders
