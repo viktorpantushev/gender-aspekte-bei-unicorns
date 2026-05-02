@@ -1,0 +1,173 @@
+Sector,male,female,unknown
+3D Printing,0,0,1
+Accounting Software,0,0,1
+Advertising Technology,0,0,2
+Aerospace,1,0,1
+Agriculture,0,0,1
+Ai,2,0,1
+Ai Audio Technologies,2,0,0
+Ai-Poweredsaas,0,1,0
+Analytics,0,0,1
+Application Security,2,0,0
+Aquaculture,0,0,1
+Architecture,0,0,1
+Artificial Intelligence,54,5,16
+Asset Performance Management,0,0,1
+Augmented Reality,0,0,1
+B2B E-Commerce,0,1,8
+Battery Manufacturing,0,0,1
+Biotech,0,0,1
+Biotechnology,4,0,2
+Blockchain,5,1,7
+Blockchain Gaming,0,0,1
+Business Intelligence,0,0,1
+Cannabis,0,0,2
+Car Sharing,0,0,1
+Cloud,0,0,1
+Cloud Communications,2,0,2
+Cloud Computing,1,0,6
+Cloud Software,0,0,1
+Coffee Shop,0,0,1
+Collaborative Software,6,0,0
+Commerce,1,0,1
+Computer Security,1,0,1
+Construction,1,0,0
+Consumer Finance,0,0,1
+Consumer Staples,1,0,0
+Content Management System,0,0,1
+Corporate Governance,0,0,1
+Cosmetics,0,0,1
+Crm,0,0,1
+Cryptocurrency,5,0,13
+Cybersecurity,13,2,16
+Data Analytics,6,1,3
+Data Governance,3,0,0
+Data Infrastructure,3,0,1
+Database Management,0,0,3
+Defense,2,0,1
+Defense Technology,8,0,0
+Developer Platform,0,0,1
+Digital Health,2,0,0
+Digital Media,0,0,1
+E-Commerce,13,1,20
+Education,0,0,4
+Education Technology,2,0,0
+Educational Technology,2,0,7
+Electric Vehicles,0,0,2
+Electronics,0,0,1
+Employee Benefits Platform,1,0,0
+Energy Supply,0,0,1
+Energy Technology,0,0,1
+Enterprise Technology,1,0,2
+Environmental,0,0,1
+Fantasy Sports,0,0,3
+Fashion,0,0,2
+Finance,1,0,4
+Financial Services,2,0,14
+Financial Software,0,0,1
+Financial Technology,22,1,60
+Fintech,5,0,0
+Fitness,0,0,1
+Food Delivery,0,0,2
+Food Technology,0,0,1
+Fraud Prevention,0,0,1
+Furniture,0,0,1
+Fusion Power,4,0,0
+Gaming,0,0,2
+Ghost Kitchen,0,0,3
+Gpt,0,0,1
+Graphic Design,5,1,0
+Health,4,0,1
+Health Care,1,0,2
+Health Technology,3,0,4
+Healthcare,3,0,11
+Healthcare Technology,2,0,1
+Holding Company,0,0,2
+Hospitality,1,0,1
+Hospitality Management Platform,1,0,0
+Hr Technology,0,0,2
+Human Resource Management,0,0,2
+Human-Enhancement Ai,0,1,1
+Humanoid Robotics,1,0,1
+Identity Management,0,0,2
+Identity Verification Service,0,0,1
+Insurance,0,0,6
+Intellectual Property,0,0,1
+Interior Design,0,0,2
+Internet,4,0,5
+Jewelery,0,1,0
+June 2021[113],0,0,1
+Legal Technology,0,0,1
+Logistics,3,0,9
+Management Consulting,0,0,1
+Marketing,0,0,4
+Marketplace,4,1,19
+Meal Kit,0,0,1
+Media,2,0,2
+Medical,0,0,1
+Medical Device,0,0,1
+Messaging,2,0,0
+Mobile Devices,0,0,1
+Mobile Financial Services,2,0,0
+Mobile Gaming,0,0,3
+Mobile Internet,0,0,1
+Mobilemarketinganalytics,0,0,1
+Music,4,0,2
+Nanotechnology,0,0,1
+Network Operating System,2,0,0
+Neurotechnology,1,0,0
+Nft,0,0,1
+Online Membership Service,2,0,0
+Orbital Data Centers,3,0,0
+Ordering Software For Pos,0,0,1
+Password Manager,0,0,1
+Personal Finance,0,0,1
+Pet Food,0,0,1
+Physical Security,4,0,0
+Printing,0,0,1
+Product Management Platform,2,0,0
+Productivity Software,0,0,1
+Property Technology,0,0,1
+Publishing,2,0,1
+Quantum Computing,4,0,1
+Quantum Technology,1,0,0
+Real Estate,0,0,4
+Real Estate Technology,0,0,4
+Restaurants,1,0,0
+Retail,0,0,5
+Robotic Process Automation,0,0,1
+Robotics,1,0,4
+Sales,0,0,2
+Self-Driving Cars,0,0,1
+Self-Driving Trucks,0,0,1
+Semiconductor,1,0,0
+Semiconductors,0,0,2
+Semiconductorsartificial Intelligence,2,0,0
+Social,0,0,1
+Social Network,1,0,3
+Software,27,1,39
+Software As A Service,9,1,7
+Software Company,0,0,1
+Software Development,2,0,2
+Software Industry,0,0,1
+Software-Defined Networking,2,0,0
+Sportswear,2,0,0
+Superintelligence,0,1,1
+Supply Chain Automation,2,1,0
+Supply Chain Management,0,0,2
+Tax Software,2,0,0
+Technology,8,0,11
+Telecommunications,0,0,1
+Transportation,2,0,8
+Travel,0,0,3
+Vacation Rental Software Platform,3,0,0
+Venture Capital,0,0,1
+Video Games,1,0,3
+Vpn Service,3,0,0
+Wearable Technology,0,0,1
+Wearables,2,1,0
+Web Development,0,0,1
+Web3,0,0,1
+Webops,0,0,1
+Workforce Management,1,0,2
+Workforce Management Software,1,0,1
