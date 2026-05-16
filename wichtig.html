@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Unicorn Press — Gender & the Billion-Dollar Machine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blue: #185FA5;
+  --blue-light: #B5D4F4;
+  --blue-dark: #042C53;
+  --red: #A32D2D;
+  --red-light: #F7C1C1;
+  --red-dark: #501313;
+  --ink: #1a1a18;
+  --paper: #f5f0e8;
+  --paper2: #ede8da;
+  --metal: #888780;
+  --metal-dark: #444441;
+  --cream: #faf6ef;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+  background: var(--ink);
+  border-bottom: 1px solid #333;
+}
+
+.hero-rule {
+  width: 60px;
+  height: 2px;
+  background: var(--paper);
+  margin: 0 auto 2rem;
+  opacity: .4;
+}
+
+.hero-kicker {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--metal);
+  margin-bottom: 1.4rem;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--paper);
+  max-width: 800px;
+  margin: 0 auto 1.2rem;
+}
+
+.hero-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--red-light);
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 300;
+  color: #b0a898;
+  max-width: 520px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+.hero-legend {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #b0a898;
+}
+
+.legend-swatch {
+  width: 28px;
+  height: 14px;
+  border-radius: 2px;
+  border: 1px solid rgba(255,255,255,.15);
+}
+
+.scroll-cue {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--metal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  animation: bob 2s ease-in-out infinite;
+}
+
+.scroll-arrow {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, var(--metal));
+}
+
+@keyframes bob {
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(6px);}
+}
+
+/* ── SCROLLY WRAPPER ── */
+.scrolly {
+  position: relative;
+}
+
+/* ── STICKY PRESS ── */
+.press-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+#press-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+}
+
+/* ── STEPS ── */
+.steps {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  margin-top: -100vh;
+}
+
+.step {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem clamp(1rem, 5vw, 4rem);
+  pointer-events: none;
+}
+
+.step:first-child { pointer-events: none; }
+
+.step-card {
+  pointer-events: auto;
+  width: min(420px, 90vw);
+  background: rgba(20,18,14,.88);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 4px;
+  padding: 2rem 2.2rem;
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+
+.step-card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.step-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--metal);
+  margin-bottom: .75rem;
+}
+
+.step-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--metal);
+  margin-bottom: .5rem;
+}
+
+.step-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.3rem, 3vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--paper);
+  margin-bottom: .9rem;
+}
+
+.step-body {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #b0a898;
+  margin-bottom: 1.2rem;
+}
+
+.step-stats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+}
+
+.step-stat {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 3px;
+  padding: .5rem .8rem;
+  flex: 1;
+  min-width: 90px;
+}
+
+.step-stat-n {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.step-stat-l {
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--metal);
+  line-height: 1.4;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: .03em;
+}
+
+.ratio-bar {
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: rgba(255,255,255,.06);
+  display: flex;
+  margin-top: 1.2rem;
+}
+
+.ratio-bar-male { background: var(--blue); transition: width .8s cubic-bezier(.4,0,.2,1); }
+.ratio-bar-female { background: var(--red); transition: width .8s cubic-bezier(.4,0,.2,1); }
+
+.ratio-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .08em;
+  color: var(--metal);
+}
+
+/* ── OUTRO ── */
+.outro {
+  background: var(--ink);
+  border-top: 1px solid #333;
+  padding: clamp(4rem, 10vw, 8rem) clamp(1.5rem, 6vw, 6rem);
+  text-align: center;
+}
+
+.outro-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 700;
+  color: var(--paper);
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.outro-body {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #b0a898;
+  max-width: 560px;
+  margin: 0 auto 3rem;
+}
+
+.levers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1px;
+  background: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 860px;
+  margin: 0 auto 3rem;
+  text-align: left;
+}
+
+.lever {
+  background: #111;
+  padding: 1.5rem;
+}
+
+.lever-icon {
+  font-size: 22px;
+  margin-bottom: .75rem;
+  display: block;
+}
+
+.lever-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--paper);
+  margin-bottom: .5rem;
+}
+
+.lever-body {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #888;
+}
+
+.source-note {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .06em;
+  color: #555;
+  margin-top: 3rem;
+}
+
+/* ── NOISE TEXTURE OVERLAY ── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: .025;
+  pointer-events: none;
+  z-index: 9999;
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-rule"></div>
+  <p class="hero-kicker">A data story · Unicorn founders · 2024</p>
+  <h1 class="hero-title">The machine that prints <em>billion-dollar founders</em></h1>
+  <p class="hero-sub">The global VC system is a printing press. It takes in entrepreneurs and stamps out unicorns. But it doesn't print all colors equally.</p>
+  <div class="hero-legend">
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:var(--blue);"></div>
+      Male founders
+    </div>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:var(--red);"></div>
+      Female founders
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- SCROLLY -->
+<div class="scrolly">
+
+  <!-- STICKY CANVAS -->
+  <div class="press-sticky">
+    <canvas id="press-canvas"></canvas>
+  </div>
+
+  <!-- STEPS -->
+  <div class="steps" id="steps">
+
+    <div class="step" data-male="0.87" data-speed="1.0">
+      <div class="step-card">
+        <p class="step-eyebrow">Chapter 1 · The factory floor</p>
+        <h2 class="step-headline">A machine that prints billion-dollar founders</h2>
+        <p class="step-body">Every unicorn startup — a company worth $1 billion or more — starts with a founder who got funded. Think of the global VC system as a giant printing press. It stamps out funded companies. Watch what colors it produces.</p>
+        <div class="ratio-bar">
+          <div class="ratio-bar-male" style="width:87%"></div>
+          <div class="ratio-bar-female" style="width:13%"></div>
+        </div>
+        <div class="ratio-labels"><span>Blue 87%</span><span>Red 13%</span></div>
+      </div>
+    </div>
+
+    <div class="step" data-male="0.966" data-speed="2.0">
+      <div class="step-card">
+        <p class="step-eyebrow">Chapter 2 · The funding gap</p>
+        <h2 class="step-headline">83.6% of all VC went to all-male teams in 2024</h2>
+        <p class="step-body">Of $289 billion invested globally, all-male founding teams captured $241.9B. All-female teams received just $6.7B — 2.3 cents of every dollar printed. The press runs almost entirely on blue ink.</p>
+        <div class="step-stats">
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:var(--blue-light)">83.6%</div>
+            <div class="step-stat-l">VC to all-male teams</div>
+          </div>
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:var(--red-light)">2.3%</div>
+            <div class="step-stat-l">VC to all-female teams</div>
+          </div>
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:#b0a898">$289B</div>
+            <div class="step-stat-l">Total global VC 2024</div>
+          </div>
+        </div>
+        <div class="ratio-bar">
+          <div class="ratio-bar-male" style="width:96.6%"></div>
+          <div class="ratio-bar-female" style="width:3.4%"></div>
+        </div>
+        <div class="ratio-labels"><span>Blue 83.6% · Mixed 14.1%</span><span>Red 2.3%</span></div>
+      </div>
+    </div>
+
+    <div class="step" data-male="0.87" data-speed="1.0">
+      <div class="step-card">
+        <p class="step-eyebrow">Chapter 3 · Representation</p>
+        <h2 class="step-headline">Only ~13% of unicorn founders are women</h2>
+        <p class="step-body">Women are 43% of global entrepreneurs, yet among the founders of billion-dollar startups, barely one in eight is a woman. That share dropped from 13% in 2017 to just 6% in 2021 before a modest rebound.</p>
+        <div class="step-stats">
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:var(--red-light)">13%</div>
+            <div class="step-stat-l">Female unicorn founders today</div>
+          </div>
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:#b0a898">43%</div>
+            <div class="step-stat-l">Women among all entrepreneurs</div>
+          </div>
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:#7a3535">6%</div>
+            <div class="step-stat-l">Share in 2021 (the low point)</div>
+          </div>
+        </div>
+        <div class="ratio-bar">
+          <div class="ratio-bar-male" style="width:87%"></div>
+          <div class="ratio-bar-female" style="width:13%"></div>
+        </div>
+        <div class="ratio-labels"><span>Blue 87%</span><span>Red 13%</span></div>
+      </div>
+    </div>
+
+    <div class="step" data-male="0.89" data-speed="1.4">
+      <div class="step-card">
+        <p class="step-eyebrow">Chapter 4 · The pay gap inside unicorns</p>
+        <h2 class="step-headline">Female founders earn 8× less than male peers</h2>
+        <p class="step-body">Even founders who crack the billion-dollar ceiling face a pay divide. In India's unicorn ecosystem, male founders took home a median ₹8.5 crore annually. Female founders: ₹1.1 crore. Same press. Very different payout.</p>
+        <div class="step-stats">
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:var(--blue-light)">₹8.5Cr</div>
+            <div class="step-stat-l">Male founder median salary</div>
+          </div>
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:var(--red-light)">₹1.1Cr</div>
+            <div class="step-stat-l">Female founder median salary</div>
+          </div>
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:#b0a898">8×</div>
+            <div class="step-stat-l">The gap</div>
+          </div>
+        </div>
+        <div class="ratio-bar">
+          <div class="ratio-bar-male" style="width:89%"></div>
+          <div class="ratio-bar-female" style="width:11%"></div>
+        </div>
+        <div class="ratio-labels"><span>Blue 89%</span><span>Red 11%</span></div>
+      </div>
+    </div>
+
+    <div class="step" data-male="0.76" data-speed="0.9">
+      <div class="step-card">
+        <p class="step-eyebrow">Chapter 5 · The hidden edge</p>
+        <h2 class="step-headline">Female-founded unicorns reach $1B faster</h2>
+        <p class="step-body">With a fraction of the ink — and capital — female-founded startups that do make it get there in 4.2 years median, vs 4.5 years overall. They made up a record 24.3% of all US VC exits in 2024. Less fuel, same destination.</p>
+        <div class="step-stats">
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:var(--red-light)">4.2 yrs</div>
+            <div class="step-stat-l">Female-founded median to unicorn</div>
+          </div>
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:#b0a898">4.5 yrs</div>
+            <div class="step-stat-l">Overall market median</div>
+          </div>
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:var(--blue-light)">24.3%</div>
+            <div class="step-stat-l">US VC exits 2024</div>
+          </div>
+        </div>
+        <div class="ratio-bar">
+          <div class="ratio-bar-male" style="width:76%"></div>
+          <div class="ratio-bar-female" style="width:24%"></div>
+        </div>
+        <div class="ratio-labels"><span>Blue 76%</span><span>Red 24%</span></div>
+      </div>
+    </div>
+
+    <div class="step" data-male="0.55" data-speed="0.85">
+      <div class="step-card">
+        <p class="step-eyebrow">Chapter 6 · What changes the machine</p>
+        <h2 class="step-headline">More female VC partners = more red bills</h2>
+        <p class="step-body">VC firms with at least one female partner are 2.3× more likely to invest in female founders. Yet women hold just 15.4% of partner-level roles. The press prints what its operators choose.</p>
+        <div class="step-stats">
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:var(--red-light)">2.3×</div>
+            <div class="step-stat-l">More likely to fund if female partner</div>
+          </div>
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:#b0a898">15.4%</div>
+            <div class="step-stat-l">Women in VC partner roles</div>
+          </div>
+          <div class="step-stat">
+            <div class="step-stat-n" style="color:var(--red-light)">13</div>
+            <div class="step-stat-l">New female unicorns in 2024</div>
+          </div>
+        </div>
+        <div class="ratio-bar">
+          <div class="ratio-bar-male" style="width:55%"></div>
+          <div class="ratio-bar-female" style="width:45%"></div>
+        </div>
+        <div class="ratio-labels"><span>Blue 55%</span><span>Red 45%</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- OUTRO -->
+<section class="outro">
+  <h2 class="outro-title">The press can be recalibrated.</h2>
+  <p class="outro-body">The data is clear: female-founded startups deliver outsized returns relative to capital deployed. Structural changes — not goodwill — are what rebalance the machine.</p>
+
+  <div class="levers">
+    <div class="lever">
+      <span class="lever-icon">◈</span>
+      <div class="lever-title">More female VC partners</div>
+      <div class="lever-body">Firms with female partners invest 2.3× more in female founders. Today only 15.4% of decision-makers are women.</div>
+    </div>
+    <div class="lever">
+      <span class="lever-icon">◈</span>
+      <div class="lever-title">Measure exits, not just deals</div>
+      <div class="lever-body">Female-founded companies made up 24.3% of US VC exits in 2024 — a record. Returns-based metrics tell a fairer story.</div>
+    </div>
+    <div class="lever">
+      <span class="lever-icon">◈</span>
+      <div class="lever-title">Diverse boards</div>
+      <div class="lever-body">57 Indian unicorns had zero women on their boards. Structural governance gaps have measurable business costs.</div>
+    </div>
+    <div class="lever">
+      <span class="lever-icon">◈</span>
+      <div class="lever-title">Sector-specific funding</div>
+      <div class="lever-body">FemTech and DeepTech are proving grounds where female-founded companies consistently outperform benchmarks.</div>
+    </div>
+  </div>
+
+  <p class="source-note">Sources · PitchBook 2024 Female Founders Report · Founders Forum Group · Female Founders Fund · Crunchbase · PrivateCircle Research</p>
+</section>
+
+<script>
+const canvas = document.getElementById('press-canvas');
+const ctx = canvas.getContext('2d');
+let W, H, frame = 0;
+
+function resize() {
+  const rect = canvas.getBoundingClientRect();
+  W = canvas.width = rect.width * devicePixelRatio;
+  H = canvas.height = rect.height * devicePixelRatio;
+  canvas.style.width = rect.width + 'px';
+  canvas.style.height = rect.height + 'px';
+  ctx.scale(devicePixelRatio, devicePixelRatio);
+}
+resize();
+window.addEventListener('resize', () => { ctx.setTransform(1,0,0,1,0,0); resize(); bills = []; });
+
+let maleRate = 0.87, targetMaleRate = 0.87;
+let pressSpeed = 1.0, targetSpeed = 1.0;
+let bills = [], spawnTimer = 0;
+
+function rr(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x+r,y); ctx.lineTo(x+w-r,y);
+  ctx.quadraticCurveTo(x+w,y,x+w,y+r);
+  ctx.lineTo(x+w,y+h-r);
+  ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+  ctx.lineTo(x+r,y+h);
+  ctx.quadraticCurveTo(x,y+h,x,y+h-r);
+  ctx.lineTo(x,y+r);
+  ctx.quadraticCurveTo(x,y,x+r,y);
+  ctx.closePath();
+}
+
+class Bill {
+  constructor(isMale, sx, side) {
+    this.isMale = isMale;
+    const cw = W/devicePixelRatio, ch = H/devicePixelRatio;
+    const slotY = ch * 0.5;
+    this.x = sx;
+    this.y = slotY;
+    this.w = 96; this.h = 42;
+    this.vx = side === 'left' ? -(2.2 + Math.random()*1.2) * pressSpeed : (2.2 + Math.random()*1.2) * pressSpeed;
+    this.vy = 0.2 + Math.random()*0.5;
+    this.rot = 0;
+    this.vrot = (Math.random()-0.5) * 0.022;
+    this.alpha = 1;
+    this.age = 0;
+    this.maxAge = 120 + Math.random()*60;
+    this.scaleX = 0.04;
+  }
+  update() {
+    if (this.scaleX < 1) this.scaleX = Math.min(1, this.scaleX + 0.09);
+    this.x += this.vx;
+    this.vy += 0.07;
+    this.y += this.vy;
+    this.rot += this.vrot;
+    this.age++;
+    const fade = this.maxAge * 0.68;
+    if (this.age > fade) this.alpha = 1 - (this.age - fade) / (this.maxAge - fade);
+  }
+  draw(ctx) {
+    ctx.save();
+    ctx.globalAlpha = Math.max(0, this.alpha);
+    ctx.translate(this.x, this.y);
+    ctx.rotate(this.rot);
+    ctx.scale(this.scaleX, 1);
+
+    const bw = this.w, bh = this.h;
+    const base  = this.isMale ? '#185FA5' : '#A32D2D';
+    const light = this.isMale ? '#B5D4F4' : '#F7C1C1';
+    const dark  = this.isMale ? '#042C53' : '#501313';
+    const mid   = this.isMale ? '#378ADD' : '#E24B4A';
+
+    ctx.fillStyle = light; rr(ctx,-bw/2,-bh/2,bw,bh,3); ctx.fill();
+    ctx.strokeStyle = base; ctx.lineWidth = 1.2; rr(ctx,-bw/2,-bh/2,bw,bh,3); ctx.stroke();
+    ctx.strokeStyle = mid; ctx.lineWidth = 0.5; rr(ctx,-bw/2+4,-bh/2+3,bw-8,bh-6,2); ctx.stroke();
+
+    ctx.beginPath(); ctx.arc(0,0,bh*0.26,0,Math.PI*2);
+    ctx.fillStyle = base; ctx.fill();
+    ctx.fillStyle = light;
+    ctx.font = `bold ${bh*0.32}px 'DM Mono',monospace`;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText('$', 0, 0.5);
+
+    ctx.fillStyle = dark;
+    ctx.font = `${bh*0.17}px 'DM Mono',monospace`;
+    ctx.fillText('1,000,000,000', 0, bh*0.31);
+    ctx.restore();
+  }
+}
+
+function drawPress() {
+  const cw = W / devicePixelRatio;
+  const ch = H / devicePixelRatio;
+  const cx = cw / 2;
+  const slotY = ch * 0.5;
+  const SLOT_H = 30;
+  const SLOT_W = Math.min(380, cw * 0.62);
+  const DRUM_H = Math.min(110, ch * 0.16);
+  const presW = SLOT_W + 40;
+
+  ctx.save();
+  ctx.scale(1/devicePixelRatio, 1/devicePixelRatio);
+  ctx.scale(devicePixelRatio, devicePixelRatio);
+  ctx.restore();
+
+  const topY = slotY - SLOT_H/2 - DRUM_H;
+  const botY = slotY + SLOT_H/2;
+
+  function drawDrum(dy, drumH, spinDir) {
+    ctx.fillStyle = '#2C2C2A';
+    rr(ctx, cx-presW/2, dy, presW, drumH, 6);
+    ctx.fill();
+    ctx.strokeStyle = '#444441'; ctx.lineWidth = 0.5;
+    rr(ctx, cx-presW/2, dy, presW, drumH, 6); ctx.stroke();
+
+    ctx.fillStyle = '#1a1a18';
+    rr(ctx, cx-presW/2+10, dy+8, presW-20, drumH-16, 4);
+    ctx.fill();
+
+    const drumCx = cx;
+    const drumCy = dy + drumH/2;
+    const drumR = (drumH - 20) / 2;
+
+    ctx.save();
+    ctx.beginPath(); rr(ctx, cx-presW/2+10, dy+8, presW-20, drumH-16, 4); ctx.clip();
+
+    const rollOff = ((frame * 2.5 * pressSpeed) % 44) - 22;
+    for (let rx = -44; rx < presW + 44; rx += 22) {
+      const bx = cx - presW/2 + 10 + rx + (spinDir > 0 ? rollOff : -rollOff);
+      const isMale = (Math.floor((rx + 220) / 22) % 100) / 100 < maleRate;
+      ctx.fillStyle = isMale ? 'rgba(24,95,165,0.18)' : 'rgba(163,45,45,0.18)';
+      ctx.fillRect(bx, dy+8, 11, drumH-16);
+    }
+    ctx.restore();
+
+    ctx.strokeStyle = '#555450'; ctx.lineWidth = 0.5;
+    for (let i = 0; i < 14; i++) {
+      const a = (i/14)*Math.PI*2 + frame*0.045*pressSpeed*spinDir;
+      const x1 = drumCx + Math.cos(a) * (drumR-6);
+      const y1 = drumCy + Math.sin(a) * (drumR-6);
+      const x2 = drumCx + Math.cos(a) * drumR;
+      const y2 = drumCy + Math.sin(a) * drumR;
+      ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+    }
+
+    ctx.strokeStyle = '#666461'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(drumCx, drumCy, drumR*0.3, 0, Math.PI*2); ctx.stroke();
+    ctx.fillStyle = '#3a3936';
+    ctx.beginPath(); ctx.arc(drumCx, drumCy, drumR*0.15, 0, Math.PI*2); ctx.fill();
+  }
+
+  drawDrum(topY, DRUM_H, 1);
+  drawDrum(botY, DRUM_H, -1);
+
+  ctx.fillStyle = '#111';
+  ctx.fillRect(cx - SLOT_W/2, slotY - SLOT_H/2, SLOT_W, SLOT_H);
+  ctx.strokeStyle = '#222'; ctx.lineWidth = 1;
+  ctx.strokeRect(cx - SLOT_W/2, slotY - SLOT_H/2, SLOT_W, SLOT_H);
+
+  const pulse = 0.5 + 0.5*Math.sin(frame * 0.14);
+  ctx.strokeStyle = `rgba(255,255,255,${0.06 + pulse*0.08})`;
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(cx - SLOT_W/2 + 12, slotY);
+  ctx.lineTo(cx + SLOT_W/2 - 12, slotY);
+  ctx.stroke();
+
+  const frameW = presW + 24;
+  ctx.fillStyle = '#3a3936';
+  rr(ctx, cx - frameW/2, topY-16, frameW, 14, 3); ctx.fill();
+  rr(ctx, cx - frameW/2, botY + DRUM_H + 2, frameW, 14, 3); ctx.fill();
+
+  ctx.fillStyle = '#666461';
+  ctx.fillRect(cx - frameW/2, topY-14, 6, DRUM_H*2 + SLOT_H + 28);
+  ctx.fillRect(cx + frameW/2 - 6, topY-14, 6, DRUM_H*2 + SLOT_H + 28);
+
+  ctx.fillStyle = '#888680';
+  ctx.font = `500 12px 'DM Mono',monospace`;
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.fillText('VC UNICORN PRESS', cx, topY + DRUM_H/2);
+
+  ctx.fillStyle = '#555';
+  ctx.font = `10px 'DM Mono',monospace`;
+  ctx.fillText(`RATE  ${Math.round(maleRate*100)}% BLUE  ·  ${Math.round((1-maleRate)*100)}% RED`, cx, topY + DRUM_H/2 + 18);
+
+  const barW = 160, barH = 5;
+  const barX = cx - barW/2;
+  const barY2 = botY + DRUM_H + 24;
+  ctx.fillStyle = '#222'; rr(ctx, barX, barY2, barW, barH, 2); ctx.fill();
+  if(maleRate > 0) { ctx.fillStyle = '#185FA5'; rr(ctx, barX, barY2, barW*maleRate, barH, 2); ctx.fill(); }
+  if(1-maleRate > 0.01) { ctx.fillStyle = '#A32D2D'; rr(ctx, barX+barW*maleRate, barY2, barW*(1-maleRate), barH, 2); ctx.fill(); }
+}
+
+function loop() {
+  ctx.save();
+  ctx.setTransform(1,0,0,1,0,0);
+  ctx.clearRect(0,0,W,H);
+  ctx.restore();
+  frame++;
+
+  maleRate += (targetMaleRate - maleRate) * 0.03;
+  pressSpeed += (targetSpeed - pressSpeed) * 0.03;
+
+  const cw = W/devicePixelRatio;
+  const ch = H/devicePixelRatio;
+  const cx = cw/2;
+  const slotY = ch * 0.5;
+  const SLOT_W = Math.min(380, cw * 0.62);
+
+  spawnTimer++;
+  const rate = Math.round(7 / pressSpeed);
+  if (spawnTimer >= rate) {
+    spawnTimer = 0;
+    const isMale = Math.random() < maleRate;
+    const side = Math.random() < 0.5 ? 'left' : 'right';
+    const sx = side === 'left' ? cx - SLOT_W/2 + 10 : cx + SLOT_W/2 - 10;
+    bills.push(new Bill(isMale, sx, side));
+    if (bills.length > 90) bills.shift();
+  }
+
+  bills = bills.filter(b => b.age < b.maxAge && b.y < ch + 100);
+  for (const b of bills) { b.update(); b.draw(ctx); }
+  drawPress();
+  requestAnimationFrame(loop);
+}
+loop();
+
+/* ── SCROLLYTELLING ── */
+const steps = document.querySelectorAll('.step');
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const card = entry.target.querySelector('.step-card');
+    if (entry.isIntersecting) {
+      card.classList.add('visible');
+      const mr = parseFloat(entry.target.dataset.male);
+      const sp = parseFloat(entry.target.dataset.speed);
+      targetMaleRate = mr;
+      targetSpeed = sp;
+    } else {
+      card.classList.remove('visible');
+    }
+  });
+}, { threshold: 0.4 });
+
+steps.forEach(s => io.observe(s));
+</script>
+</body>
+</html>
