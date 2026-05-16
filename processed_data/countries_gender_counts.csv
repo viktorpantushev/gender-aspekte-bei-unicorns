@@ -1,0 +1,39 @@
+Country,male,female,unknown
+Argentina,1,0,0
+Armenia,3,0,0
+Artificial Intelligence,0,0,1
+Australia,6,1,0
+Bangladesh,2,0,0
+Belarus,2,0,0
+Belgium,3,0,0
+Canada,8,0,3
+China,4,1,4
+Croatia,2,0,1
+Czech Republic,3,0,0
+Egypt,2,0,0
+Estonia,1,0,0
+Finland,16,2,2
+France,9,0,0
+Georgia,1,0,0
+Germany,11,0,1
+Hong Kong,0,0,1
+India,29,4,37
+Ireland,0,0,1
+Israel,10,1,0
+Japan,2,0,0
+Lithuania,6,1,0
+Poland,2,0,0
+Portugal,4,1,0
+Portugal[358],2,0,0
+Portugal[92],2,0,0
+Singapore,1,0,0
+South Korea,0,1,0
+Sweden,6,0,0
+Switzerland,3,0,0
+Turkey,1,1,0
+Ukraine[56],3,0,0
+United Arab Emirates,0,0,1
+United Kingdom,14,1,1
+United States,176,15,25
+United States[57],3,0,0
+United States[93],6,0,0
