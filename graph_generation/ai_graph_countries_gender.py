@@ -1,5 +1,5 @@
 import pandas as pd
-import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 from pathlib import Path
 
 
@@ -13,26 +13,54 @@ def plot_countries_gender_graphs(csv_path: Path, output_dir: Path) -> None:
 
     # Gestapeltes Balkendiagramm: Top 12 Länder nach Unicorn-Gründer:innen-Gender
     top_small = df.head(12)
-    x = range(len(top_small))
-    width = 0.25
 
     male_color = '#9FB7D8'
     female_color = '#B04C4C'
     unknown_color = '#A9D3A4'
 
-    plt.figure(figsize=(14, 8))
-    plt.bar([i - width for i in x], top_small['male'], width=width, label='Male', color=male_color)
-    plt.bar(x, top_small['female'], width=width, label='Female', color=female_color)
-    plt.bar([i + width for i in x], top_small['unknown'], width=width, label='Unknown', color=unknown_color)
-    plt.xticks(x, top_small['Country'], rotation=50, ha='right')
-    plt.title('Top 12 Länder: Unicorn-Gründerinnen und -Gründer nach Gender')
-    plt.xlabel('Land')
-    plt.ylabel('Anzahl Unicorn-Gründer:innen')
-    plt.legend()
-    plt.grid(axis='y', linestyle='--', alpha=0.4)
-    plt.tight_layout()
-    plt.savefig(output_dir / 'ai_countries_gender_grouped_bar.png', dpi=200)
-    plt.close()
+    fig = go.Figure(data=[
+        go.Bar(
+            name='Male',
+            x=top_small['Country'],
+            y=top_small['male'],
+            marker_color=male_color,
+            hovertemplate='<b>%{x}</b><br>Male: %{y}<extra></extra>'
+        ),
+        go.Bar(
+            name='Female',
+            x=top_small['Country'],
+            y=top_small['female'],
+            marker_color=female_color,
+            hovertemplate='<b>%{x}</b><br>Female: %{y}<extra></extra>'
+        ),
+        go.Bar(
+            name='Unknown',
+            x=top_small['Country'],
+            y=top_small['unknown'],
+            marker_color=unknown_color,
+            hovertemplate='<b>%{x}</b><br>Unknown: %{y}<extra></extra>'
+        )
+    ])
+
+    fig.update_layout(
+        title='Top 12 Länder: Unicorn-Gründerinnen und -Gründer nach Gender',
+        xaxis_title='Land',
+        yaxis_title='Anzahl Unicorn-Gründer:innen',
+        barmode='group',
+        height=600,
+        template='plotly_white',
+        hovermode='x unified',
+        xaxis_tickangle=-45,
+        legend=dict(
+            yanchor="top",
+            y=0.99,
+            xanchor="right",
+            x=0.99
+        )
+    )
+
+    output_path = output_dir / 'ai_countries_gender_grouped_bar.html'
+    fig.write_html(str(output_path), config={'responsive': True, 'displayModeBar': True})
 
     print(f'Grafiken gespeichert in: {output_dir}')
 

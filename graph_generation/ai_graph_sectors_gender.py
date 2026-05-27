@@ -1,5 +1,5 @@
 import pandas as pd
-import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 from pathlib import Path
 
 
@@ -16,56 +16,98 @@ def plot_sectors_gender_graphs(csv_path: Path, output_dir: Path) -> None:
     female_color = '#B04C4C'
     unknown_color = '#A9D3A4'
 
-    # 1. Balkendiagramm: Top 15 Sektoren nach Gesamtanzahl
+    # 1. Horizontales Balkendiagramm: Top 15 Sektoren nach Gesamtanzahl
     top_sectors = df.head(15)
-    plt.figure(figsize=(14, 9))
-    bars = plt.barh(top_sectors['Sector'], top_sectors['total'], color=male_color)
-    plt.title('Top 15 Unicorn-Sektoren nach Anzahl')
-    plt.xlabel('Anzahl Unicorns')
-    plt.ylabel('Sektor')
-    plt.gca().invert_yaxis()
-    for bar in bars:
-        plt.text(bar.get_width() + 0.5, bar.get_y() + bar.get_height() / 2, f'{int(bar.get_width())}', va='center')
-    plt.tight_layout()
-    plt.savefig(output_dir / 'rename_und_recolor__ai_sectors_total_bar.png', dpi=200)
-    plt.close()
+    fig1 = go.Figure(data=[
+        go.Bar(
+            y=top_sectors['Sector'],
+            x=top_sectors['total'],
+            orientation='h',
+            marker=dict(color=male_color),
+            text=top_sectors['total'],
+            textposition='auto',
+            hovertemplate='<b>%{y}</b><br>Anzahl: %{x}<extra></extra>'
+        )
+    ])
+
+    fig1.update_layout(
+        title='Top 15 Unicorn-Sektoren nach Anzahl',
+        xaxis_title='Anzahl Unicorns',
+        yaxis_title='Sektor',
+        height=600,
+        template='plotly_white',
+        hovermode='y unified',
+        yaxis=dict(autorange='reversed')
+    )
+
+    output_path1 = output_dir / 'rename_und_recolor__ai_sectors_total_bar.html'
+    fig1.write_html(str(output_path1), config={'responsive': True, 'displayModeBar': True})
 
     # 2. Gestapeltes Balkendiagramm: Top 10 Sektoren nach Gender
     top_stacked = df.head(10)
-    x = range(len(top_stacked))
-    plt.figure(figsize=(16, 10))
-    plt.bar(x, top_stacked['male'], label='Male', color=male_color)
-    plt.bar(x, top_stacked['female'], bottom=top_stacked['male'], label='Female', color=female_color)
-    plt.bar(
-        x,
-        top_stacked['unknown'],
-        bottom=top_stacked['male'] + top_stacked['female'],
-        label='Unknown',
-        color=unknown_color,
+    
+    fig2 = go.Figure(data=[
+        go.Bar(
+            name='Male',
+            x=top_stacked['Sector'],
+            y=top_stacked['male'],
+            marker_color=male_color,
+            hovertemplate='<b>%{x}</b><br>Male: %{y}<extra></extra>'
+        ),
+        go.Bar(
+            name='Female',
+            x=top_stacked['Sector'],
+            y=top_stacked['female'],
+            marker_color=female_color,
+            hovertemplate='<b>%{x}</b><br>Female: %{y}<extra></extra>'
+        ),
+        go.Bar(
+            name='Unknown',
+            x=top_stacked['Sector'],
+            y=top_stacked['unknown'],
+            marker_color=unknown_color,
+            hovertemplate='<b>%{x}</b><br>Unknown: %{y}<extra></extra>'
+        )
+    ])
+
+    fig2.update_layout(
+        title='Top 10 Unicorn-Sektoren: Gestapelte Genderverteilung',
+        xaxis_title='Sektor',
+        yaxis_title='Anzahl Unicorns',
+        barmode='stack',
+        height=600,
+        template='plotly_white',
+        hovermode='x unified',
+        xaxis_tickangle=-45,
+        legend=dict(
+            yanchor="top",
+            y=0.99,
+            xanchor="right",
+            x=0.99
+        )
     )
-    plt.xticks(x, top_stacked['Sector'], rotation=55, ha='right')
-    plt.title('Top 10 Unicorn-Sektoren: Gestapelte Genderverteilung')
-    plt.xlabel('Sektor')
-    plt.ylabel('Anzahl Unicorns')
-    plt.legend()
-    plt.grid(axis='y', linestyle='--', alpha=0.4)
-    plt.tight_layout()
-    plt.savefig(output_dir / 'ai_sectors_gender_stacked_bar.png', dpi=200)
-    plt.close()
+
+    output_path2 = output_dir / 'ai_sectors_gender_stacked_bar.html'
+    fig2.write_html(str(output_path2), config={'responsive': True, 'displayModeBar': True})
 
     # 3. Kreisdiagramm: Gender-Verteilung in allen Sektoren
-    plt.figure(figsize=(8, 8))
-    plt.pie(
-        overall_totals,
+    fig3 = go.Figure(data=[go.Pie(
         labels=['Male', 'Female', 'Unknown'],
-        autopct='%1.1f%%',
-        startangle=140,
-        colors=[male_color, female_color, unknown_color],
-        wedgeprops={'edgecolor': 'white'},
+        values=overall_totals.values,
+        marker=dict(colors=[male_color, female_color, unknown_color], line=dict(color='white', width=2)),
+        hovertemplate='<b>%{label}</b><br>Anzahl: %{value}<br>Prozent: %{percent}<extra></extra>',
+        textposition='auto',
+        textinfo='label+percent'
+    )])
+
+    fig3.update_layout(
+        title='Gender-Verteilung in allen Unicorn-Sektoren',
+        height=600,
+        template='plotly_white'
     )
-    plt.title('Gender-Verteilung in allen Unicorn-Sektoren')
-    plt.savefig(output_dir / 'rename__ai_sectors_gender_pie_chart.png', dpi=200)
-    plt.close()
+
+    output_path3 = output_dir / 'rename__ai_sectors_gender_pie_chart.html'
+    fig3.write_html(str(output_path3), config={'responsive': True, 'displayModeBar': True})
 
     print(f'Grafiken gespeichert in: {output_dir}')
 

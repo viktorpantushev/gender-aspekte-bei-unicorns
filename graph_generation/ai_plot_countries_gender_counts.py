@@ -1,5 +1,5 @@
 import pandas as pd
-import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 from pathlib import Path
 
 
@@ -10,19 +10,30 @@ def plot_gender_counts(csv_path: Path, output_dir: Path) -> None:
     # Gesamtsummen nach Gender
     totals = df[['male', 'female', 'unknown']].sum()
 
-    plt.figure(figsize=(8, 5))
-    bars = plt.bar(totals.index, totals.values, color=['#1f77b4', '#ff7f0e', '#2ca02c'])
-    plt.title('Gesamtanzahl der Unicorn-Gründer:innen nach Gender')
-    plt.xlabel('Gender')
-    plt.ylabel('Anzahl')
-    plt.grid(axis='y', linestyle='--', alpha=0.4)
-    for bar in bars:
-        height = bar.get_height()
-        plt.text(bar.get_x() + bar.get_width() / 2, height + max(totals.values) * 0.01, f'{int(height)}', ha='center', va='bottom')
-    output_path = output_dir / 'countries_gender_counts_totals.png'
-    plt.tight_layout()
-    plt.savefig(output_path, dpi=200)
-    plt.close()
+    # Interaktives Balkendiagramm mit Plotly
+    fig = go.Figure(data=[
+        go.Bar(
+            x=totals.index,
+            y=totals.values,
+            marker=dict(color=['#9FB7D8', '#B04C4C', '#A9D3A4']),
+            text=totals.values,
+            textposition='auto',
+            hovertemplate='<b>%{x}</b><br>Anzahl: %{y}<extra></extra>'
+        )
+    ])
+
+    fig.update_layout(
+        title='Gesamtanzahl der Unicorn-Gründer:innen nach Gender',
+        xaxis_title='Gender',
+        yaxis_title='Anzahl',
+        height=500,
+        template='plotly_white',
+        hovermode='x unified',
+        showlegend=False
+    )
+
+    output_path = output_dir / 'countries_gender_counts_totals.html'
+    fig.write_html(str(output_path), config={'responsive': True, 'displayModeBar': True})
 
     # Entfernt: Top 20 Ländervergleich, da im Ordner "not in use".
     # Wenn gewünscht, kann hier eine neue Web-Ausgabe ergänzt werden.

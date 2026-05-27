@@ -2,7 +2,7 @@ import re
 from pathlib import Path
 
 import pandas as pd
-import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 from gender_guesser.detector import Detector
 
 
@@ -96,50 +96,84 @@ def plot_industry_gender_stacked(counts: pd.DataFrame, title: str, output_path: 
         return
 
     counts = counts.head(max_items)
-    x = range(len(counts))
 
     male_color = '#9FB7D8'
     female_color = '#B04C4C'
     unknown_color = '#A9D3A4'
 
-    plt.figure(figsize=(16, 10))
-    plt.bar(x, counts['male'], label='Male', color=male_color)
-    plt.bar(x, counts['female'], bottom=counts['male'], label='Female', color=female_color)
-    plt.bar(
-        x,
-        counts['unknown'],
-        bottom=counts['male'] + counts['female'],
-        label='Unknown',
-        color=unknown_color,
+    fig = go.Figure(data=[
+        go.Bar(
+            name='Male',
+            x=counts.index,
+            y=counts['male'],
+            marker_color=male_color,
+            hovertemplate='<b>%{x}</b><br>Male: %{y}<extra></extra>'
+        ),
+        go.Bar(
+            name='Female',
+            x=counts.index,
+            y=counts['female'],
+            marker_color=female_color,
+            hovertemplate='<b>%{x}</b><br>Female: %{y}<extra></extra>'
+        ),
+        go.Bar(
+            name='Unknown',
+            x=counts.index,
+            y=counts['unknown'],
+            marker_color=unknown_color,
+            hovertemplate='<b>%{x}</b><br>Unknown: %{y}<extra></extra>'
+        )
+    ])
+
+    fig.update_layout(
+        title=title,
+        xaxis_title='Industry',
+        yaxis_title='Anzahl Gründer:innen',
+        barmode='stack',
+        height=600,
+        template='plotly_white',
+        hovermode='x unified',
+        xaxis_tickangle=-45,
+        legend=dict(
+            yanchor="top",
+            y=0.99,
+            xanchor="right",
+            x=0.99
+        )
     )
-    plt.xticks(x, counts.index, rotation=55, ha='right')
-    plt.title(title)
-    plt.xlabel('Industry')
-    plt.ylabel('Anzahl Gründer:innen')
-    plt.legend()
-    plt.grid(axis='y', linestyle='--', alpha=0.4)
-    plt.tight_layout()
-    plt.savefig(output_path, dpi=200)
-    plt.close()
+
+    fig.write_html(str(output_path), config={'responsive': True, 'displayModeBar': True})
 
 
 def plot_industry_counts(counts: pd.Series, title: str, output_path: Path, max_items: int = 20) -> None:
     if counts is None:
         return
 
-    counts = counts.head(max_items)
-    plt.figure(figsize=(12, 8))
-    bars = plt.barh(counts.index[::-1], counts.values[::-1], color='#4C72B0')
-    plt.title(title)
-    plt.xlabel('Anzahl der Unicorns')
-    plt.tight_layout()
+    counts = counts.head(max_items).sort_values()  # Sort ascending for horizontal bar
 
-    for bar in bars:
-        width = bar.get_width()
-        plt.text(width + max(counts.values) * 0.01, bar.get_y() + bar.get_height() / 2, f'{int(width)}', va='center')
+    fig = go.Figure(data=[
+        go.Bar(
+            y=counts.index,
+            x=counts.values,
+            orientation='h',
+            marker=dict(color='#4C72B0'),
+            text=counts.values,
+            textposition='auto',
+            hovertemplate='<b>%{y}</b><br>Anzahl: %{x}<extra></extra>'
+        )
+    ])
 
-    plt.savefig(output_path, dpi=200)
-    plt.close()
+    fig.update_layout(
+        title=title,
+        xaxis_title='Anzahl der Unicorns',
+        yaxis_title='',
+        height=600,
+        template='plotly_white',
+        hovermode='y unified',
+        yaxis=dict(autorange='reversed')
+    )
+
+    fig.write_html(str(output_path), config={'responsive': True, 'displayModeBar': True})
 
 
 def main() -> None:
@@ -153,7 +187,7 @@ def main() -> None:
         plot_industry_counts(
             current_counts,
             'Aktuelle Unicorns: Anzahl je Branche',
-            out_dir / 'add_gender__current_unicorns_industry_counts.png',
+            out_dir / 'add_gender__current_unicorns_industry_counts.html',
             max_items=20,
         )
         print('Grafik für aktuelle Unicorns gespeichert.')
@@ -165,7 +199,7 @@ def main() -> None:
         plot_industry_gender_stacked(
             industry_gender_counts,
             'Aktuelle Unicorns: Gestapelte Genderverteilung je Branche',
-            out_dir / 'add_gender_current_unicorns_industry_gender_stacked_bar.png',
+            out_dir / 'add_gender_current_unicorns_industry_gender_stacked_bar.html',
             max_items=15,
         )
         print('Gestapeltes Gender-Diagramm für aktuelle Unicorns gespeichert.')
