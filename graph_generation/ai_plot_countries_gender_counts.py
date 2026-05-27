@@ -24,34 +24,14 @@ def plot_gender_counts(csv_path: Path, output_dir: Path) -> None:
     plt.savefig(output_path, dpi=200)
     plt.close()
 
-    # Top 20 Länder nach Gesamtanzahl
-    df['total'] = df[['male', 'female', 'unknown']].sum(axis=1)
-    top_countries = df.sort_values('total', ascending=False).head(20)
-
-    x = range(len(top_countries))
-    width = 0.25
-
-    plt.figure(figsize=(14, 8))
-    plt.bar([i - width for i in x], top_countries['male'], width=width, label='male', color='#1f77b4')
-    plt.bar(x, top_countries['female'], width=width, label='female', color='#ff7f0e')
-    plt.bar([i + width for i in x], top_countries['unknown'], width=width, label='unknown', color='#2ca02c')
-
-    plt.xticks(x, top_countries['Country/countries'], rotation=45, ha='right')
-    plt.title('Top 20 Länder nach Unicorn-Gründer:innen (male/female/unknown)')
-    plt.xlabel('Land')
-    plt.ylabel('Anzahl')
-    plt.legend()
-    plt.grid(axis='y', linestyle='--', alpha=0.4)
-    output_path = output_dir / 'countries_gender_counts_top20.png'
-    plt.tight_layout()
-    plt.savefig(output_path, dpi=200)
-    plt.close()
+    # Entfernt: Top 20 Ländervergleich, da im Ordner "not in use".
+    # Wenn gewünscht, kann hier eine neue Web-Ausgabe ergänzt werden.
 
 
 if __name__ == '__main__':
     root = Path(__file__).resolve().parent
-    csv_path = root / 'processed_data' / 'countries_gender_counts.csv'
-    output_dir = root / 'processed_data'
+    csv_path = root.parent / 'processed_data' / 'countries_gender_counts.csv'
+    output_dir = root.parent / 'web_output'
     output_dir.mkdir(parents=True, exist_ok=True)
     plot_gender_counts(csv_path, output_dir)
     print(f'Grafiken gespeichert in: {output_dir}')

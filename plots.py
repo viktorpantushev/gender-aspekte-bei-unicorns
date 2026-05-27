@@ -75,11 +75,6 @@ plt.legend(
 # Layout propre
 plt.tight_layout()
 
-# Sauvegarder image HD
-plt.savefig(
-    "professional_gender_plot.png",
-    dpi=300
-)
-
-# Afficher
-plt.show()
+# Ausgabedatei entfernt: professional_gender_plot.png wird nicht mehr generiert,
+# weil dieses Diagramm im aktuellen Workflow als "not in use" markiert ist.
+print('plots.py ist veraltet; nutze stattdessen die graph_generation-Skripte.')
