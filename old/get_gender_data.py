@@ -6,6 +6,7 @@ import gender_guesser.detector as gender
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+from guess_indian_gender import IndianGenderPredictor
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -40,6 +41,9 @@ _MIN_PRONOUN_COUNT = 1
 _TITLES = frozenset([
     "Dr.", "Dr", "Prof.", "Prof", "Mr.", "Ms.", "Mrs.", "Miss", "Sir", "Dame",
 ])
+
+# Fallback gender model for Indian names, which gender_guesser covers poorly.
+_indian_gender_predictor = IndianGenderPredictor()
 
 # Retry settings
 _MAX_RETRIES = 3
@@ -122,12 +126,16 @@ def _parse_names(founder_string: str) -> list[str]:
 # ---------------------------------------------------------------------------
 
 def _predict_with_web_search(name: str, detector) -> str:
-    """Predict gender via web search; fall back to name-heuristic."""
+    """Predict gender from name heuristics (normal + Indian names); fall back to web search."""
+    name_gender = _predict_single_gender(name, detector)
+    if name_gender != "unknown":
+        return name_gender
+
     bio_gender = _scrape_biography(name)
     if bio_gender != "unknown":
         logger.debug("Web search resolved %r → %s", name, bio_gender)
         return bio_gender
-    return _predict_single_gender(name, detector)
+    return "unknown"
 
 
 def _predict_single_gender(name: str, detector) -> str:
@@ -152,8 +160,26 @@ def _predict_single_gender(name: str, detector) -> str:
                 prediction, confidence, middle_prediction, middle_confidence, name,
             )
             prediction = middle_prediction
+            confidence = middle_confidence
+
+    if confidence < _FALLBACK_THRESHOLD:
+        indian_prediction = _predict_indian_name_gender(first_name)
+        if indian_prediction == "unknown" and middle_name:
+            indian_prediction = _predict_indian_name_gender(middle_name)
+        if indian_prediction != "unknown":
+            logger.debug("Resolved %r → %s via Indian name list", name, indian_prediction)
+            return indian_prediction
 
     return _normalize_gender(prediction)
+
+
+def _predict_indian_name_gender(name: str) -> str:
+    """Predict gender for an Indian first name via the guess-indian-gender model."""
+    try:
+        return _indian_gender_predictor.predict(name=name)
+    except Exception as e:
+        logger.debug("Indian name gender prediction failed for %r: %s", name, e)
+        return "unknown"
 
 
 def _get_confidence(prediction: str) -> float:
