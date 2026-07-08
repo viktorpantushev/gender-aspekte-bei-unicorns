@@ -1,253 +1,110 @@
-# 🦄 Gender Aspects in Unicorn Startups
+# 🦄 Gender-Aspekte bei Unicorns
 
-## 📊 A Data-Driven Analysis of Founder Gender Representation in Global Unicorn Companies
+Dieses Projekt untersucht, wie häufig Frauen und Männer unter den Gründerinnen und Gründern von Unicorn-Startups vertreten sind. Dazu werden öffentlich verfügbare Daten aus Wikipedia gesammelt, Gründerinnen und Gründer über Namen und zusätzliche Web-Quellen klassifiziert und die Ergebnisse anschließend ausgewertet.
 
-### 🎯 Overview
+## Ziel
 
-Unicorn startups are privately held companies valued at more than one billion US dollars. These companies play a crucial role in innovation, entrepreneurship, and economic growth worldwide.
+Die Analyse beantwortet die Frage, wie die Geschlechterverteilung bei Unicorn-Gründerinnen und -Gründern aussieht und wie sie sich nach Land, Branche, Sektor oder Bewertung unterscheidet.
 
-This project investigates gender representation among unicorn startup founders. Using publicly available data, we analyze how founder gender is distributed across countries, industries, sectors, and company valuations. The project combines web scraping, data cleaning, gender classification, and interactive data visualization to identify potential gender disparities within the global startup ecosystem.
+## Überblick über den Workflow
 
----
+1. Daten von Wikipedia sammeln
+2. Rohdaten in Tabellenstruktur bringen
+3. Gründerinnen und Gründer nach Geschlecht klassifizieren
+4. Unsichere oder unbekannte Einträge nachverarbeiten
+5. Ergebnisse als CSV-Dateien speichern und weiter analysieren
 
-## ❓ Research Question
+## Verwendete Werkzeuge
 
-**To what extent are women represented among founders of unicorn startups, and how does gender distribution vary across countries, industries, sectors, and startup valuations?**
+- Python
+- pandas
+- requests
+- BeautifulSoup
+- gender-guesser
+- guess-indian-gender
+- Jupyter Notebook
+- matplotlib / plotly
 
----
-
-## 🔬 Methodology
-
-The analysis follows a multi-stage workflow:
-
-1. 🌐 Data collection from public sources
-2. 🧹 Data cleaning and preprocessing
-3. 👥 Founder gender classification
-4. 📈 Statistical analysis
-5. 📊 Interactive visualization
-6. 🖥️ Dashboard generation
-
-### Workflow
+## Projektstruktur
 
 ```text
-Wikipedia
-    ↓
-Data Scraping
-    ↓
-Data Cleaning
-    ↓
-Gender Classification
-    ↓
-Country Analysis
-Industry Analysis
-Valuation Analysis
-    ↓
-Interactive Visualizations
-    ↓
-HTML Dashboard
-```
-
----
-
-## 🌐 Data Collection
-
-The project collects unicorn startup data from publicly available Wikipedia tables.
-
-The script `scrape_wiki.py` uses:
-
-* Requests
-* BeautifulSoup
-* Pandas
-
-to extract structured information about unicorn companies and their founders. The extracted data is converted into CSV files for further processing and analysis.
-
----
-
-## 🧹 Data Cleaning and Preparation
-
-The notebook `scrape_and_clean.ipynb` performs the preprocessing of the collected data.
-
-This includes:
-
-* Cleaning founder names
-* Standardizing column names
-* Handling missing values
-* Preparing datasets for gender classification
-* Transforming and organizing relevant variables
-
-The cleaned datasets form the basis for all subsequent analyses and visualizations.
-
----
-
-## 👥 Gender Classification
-
-Founder gender is determined using a multi-step classification approach.
-
-### Step 1 – Name-Based Prediction
-
-The project first uses the `gender_guesser` library to predict gender from first names.
-
-### Step 2 – Indian Name Support
-
-To improve classification accuracy for international founders, the project additionally uses the `guess_indian_gender` model.
-
-### Step 3 – Public Biography Verification
-
-For ambiguous cases, additional information is retrieved from:
-
-* Wikidata
-* Wikipedia
-* Google Search snippets
-
-The final classifications are normalized into three categories:
-
-* Male
-* Female
-* Unknown
-
-To reduce the risk of misclassification, uncertain cases are assigned to the category **Unknown**.
-
----
-
-## 📈 Analyses Performed
-
-The project investigates several dimensions of gender representation among unicorn founders.
-
-### 🌍 Country Analysis
-
-* Distribution of founders by gender across countries
-* Comparison of male and female founder representation
-
-### 🏭 Industry Analysis
-
-* Gender distribution across unicorn industries
-* Comparison of founder representation within industries
-
-### 📂 Sector Analysis
-
-* Gender distribution among major unicorn sectors
-* Relative importance of different industries
-
-### 💰 Valuation Analysis
-
-* Gender representation across unicorn exit valuations
-* Comparison between company valuation categories
-
----
-
-## 📋 Dataset Summary
-
-After the gender classification process, the analyzed dataset contained:
-
-| Gender  | Count |
-| ------- | ----- |
-| Male    | 305   |
-| Female  | 23    |
-| Unknown | 88    |
-
-The results indicate a substantial gender imbalance among unicorn founders, with male founders representing the majority of identified individuals.
-
----
-
-## 📊 Visualizations
-
-The project generates multiple interactive visualizations, including:
-
-* 🌍 Gender distribution by country
-* 🏭 Gender distribution by industry
-* 📂 Gender distribution by sector
-* 👥 Founder counts by gender
-* 💰 Unicorn valuation analysis
-* 📈 Sector comparison charts
-
-All visualizations are exported as interactive HTML files.
-
----
-
-## 🖥️ Interactive Dashboard
-
-The script `build_webpage.py` automatically combines all generated visualizations into a single responsive HTML dashboard.
-
-The dashboard provides:
-
-* Interactive charts
-* Zoom and navigation tools
-* Hover information
-* Export functionality
-
-This enables users to explore the results in an intuitive and user-friendly way.
-
----
-
-## 📁 Project Structure
-
-```text
-gender-aspekte-bei-unicorns/
-│
-├── graph_generation/
-├── old/
+.
+├── data/
+│   ├── countries_gender_counts.csv
+│   ├── current_unicorns.csv
+│   ├── current_unicorns_with_gender.csv
+│   ├── past_unicorns.csv
+│   ├── past_unicorns_with_gender.csv
+│   └── sectors_gender_counts.csv
+├── processed_data/
+│   ├── countries_gender_counts.csv
+│   ├── current_unicorns.csv
+│   ├── current_unicorns_rescued.csv
+│   ├── current_unicorns_with_gender.csv
+│   ├── past_unicorns.csv
+│   ├── past_unicorns_rescued.csv
+│   ├── past_unicorns_with_gender.csv
+│   └── sectors_gender_counts.csv
 ├── src/
-│   ├── scrape_wiki.py
+│   ├── company_founders.py
+│   ├── filter_df.py
 │   ├── get_gender_data.py
-│   ├── ai_graph_countries_gender.py
-│   ├── ai_graph_exit_values_gender.py
-│   ├── ai_graph_sectors_gender.py
-│   ├── ai_plot_countries_gender_counts.py
-│   ├── ai_plot_industry_unicorns.py
-│   └── build_webpage.py
-│
-├── scrape_and_clean.ipynb
-└── README.md
+│   ├── rescue_unknowns.py
+│   └── scrape_wiki.py
+├── gender_aspekte_bei_unicorns.ipynb
+├── current_unicorns.csv
+├── past_unicorns.csv
+├── requirements.txt
+└── readme.md
 ```
 
----
+## Datenquellen
 
-## 🛠️ Technologies Used
+Die Basisdaten kommen aus der Wikipedia-Liste zu Unicorn-Startups:
 
-* Python
-* Pandas
-* Requests
-* BeautifulSoup
-* Jupyter Notebook
-* gender_guesser
-* guess_indian_gender
-* HTML
-* Data Visualization Libraries
+- https://en.wikipedia.org/wiki/List_of_unicorn_startup_companies
 
----
+Die Scraping-Logik liegt in [src/scrape_wiki.py](src/scrape_wiki.py).
 
-## 🚀 How to Run the Project
+## Hauptablauf
 
-1. Clone the repository.
-2. Install the required Python packages.
-3. Run `scrape_wiki.py` to collect the unicorn data.
-4. Execute `scrape_and_clean.ipynb` to clean and prepare the dataset.
-5. Run the visualization scripts in the `src` directory.
-6. Execute `build_webpage.py` to generate the final interactive dashboard.
+### 1. Abhängigkeiten installieren
 
----
+```bash
+pip install -r requirements.txt
+```
 
-## 📦 Output
+### 2. Daten sammeln
 
-The project produces:
+Die eigentliche Datenbeschaffung läuft im Notebook [gender_aspekte_bei_unicorns.ipynb](gender_aspekte_bei_unicorns.ipynb). Dort werden die Wikipedia-Tabellen gelesen und als CSV-Dateien gespeichert.
 
-* Cleaned CSV datasets
-* Gender classification results
-* Interactive HTML visualizations
-* A complete dashboard (`index.html`)
+### 3. Geschlechterklassifikation
 
----
+Die eigentliche Geschlechtsvorhersage geschieht über [src/get_gender_data.py](src/get_gender_data.py). Dabei wird zunächst ein Name-basierter Ansatz verwendet, ergänzt durch:
 
-## ⚠️ Limitations
+- gender-guesser
+- eine spezielle Modellierung für indische Namen
+- zusätzliche Web-Suchen über Wikidata, Wikipedia und Google-Snippets
 
-The gender classification process relies on names and publicly available information. Consequently, some founders cannot be classified with sufficient confidence and remain categorized as **Unknown**.
+### 4. Nachverarbeitung unsicherer Einträge
 
-Furthermore, gender cannot always be accurately inferred from names alone. Therefore, the results should be interpreted as estimates rather than definitive classifications.
+Mit [src/rescue_unknowns.py](src/rescue_unknowns.py) können Einträge, bei denen das Geschlecht nicht sicher bestimmt werden konnte, gezielt erneut verarbeitet werden.
 
----
+## Ausgabeprodukte
 
-## 🎓 Academic Context
+Das Projekt erzeugt unter anderem:
 
-This project was developed as part of a university group project at **Technische Hochschule Nürnberg**.
+- Rohdaten zu aktuellen und vergangenen Unicorns
+- Daten mit Geschlechterklassifikation
+- aggregierte CSV-Dateien für Länder, Branchen und Sektoren
+- Zwischenstände in [data](data) und [processed_data](processed_data)
 
-The objective was to investigate gender representation among founders of unicorn startups through the application of web scraping, data preprocessing, gender classification, statistical analysis, and interactive data visualization techniques.
+## Hinweise
+
+- Die Geschlechterzuordnung basiert auf Namen und öffentlich verfügbaren Informationen. Daher sind die Ergebnisse als Schätzung zu verstehen.
+- Unsichere Fälle werden bewusst als "unknown" behandelt, um Fehlklassifikationen zu vermeiden.
+- Web-basierte Nachschlagevorgänge können je nach Netzwerk und Rate-Limits langsamer sein.
+
+## Optionaler Hilfs-Workflow
+
+Zusätzlich gibt es in [src/company_founders.py](src/company_founders.py) einen kleinen Helfer, der Unternehmensnamen über Wikidata nach Gründerinnen und Gründern durchsucht.
