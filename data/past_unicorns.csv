@@ -1,0 +1,209 @@
+Company,Last valuation(US$billions),Valuation date,Exit date,Exit reason,Exit valuation(US$billions),Country,Founders,col_8,Founder_Genders
+SpaceX,1250,February2026(2026-02)[575],June2026(2026-06)[576],IPO,1770,United States,Elon Musk,,['male']
+Uber,72,August 2018[577],May 2019[578],IPO,82.4,United States,"Travis Kalanick,Garett Camp",,"['male', 'male']"
+DiDi,62,July 2019[579],June 2021[580],IPO,73,China,Cheng Wei,,['male']
+Cursor,29,November2025(2025-11)[581],June 2026[582],Acquired,60,United States,"Michael Truell,Sualeh Asif,Arvid LunnemarkandAman Sanger",,"['male', 'male', 'male', 'male']"
+Facebook,50,January 2011,May 2012[583],IPO,104,United States,"Mark Zuckerberg,Eduardo Saverin, Andrew McCollum,Chris Hughes,Dustin Moskovitz",,"['male', 'male', 'male', 'male', 'male']"
+Xiaomi,45,April 2015,July 2018[584],IPO,70,China,Lei Jun,,['male']
+Alibaba,42,June 2016,September 2014[585],IPO,238,China,Jack Ma,,['male']
+Lufax,39.4,March 2019,October 2020[586],IPO,33,China,,,[]
+UiPath,35,February 2021[587],April 2021[588],IPO,29,United States / Romania,Daniel Dinesand Marius Tîrcă,,['male']
+Airbnb,31,March 2017[589],December 2020[590],IPO,100,United States,"Brian Chesky,Nathan Blecharczyk,Joe Gebbia",,"['male', 'male', 'male']"
+Nubank,30.25,June 2021[591],December 2021,IPO,45,Brazil,"David Velez, Edward Wible, Cristina Junqueira",,"['male', 'male', 'female']"
+Meituan-Dianping,30,October 2017[183],September 2018[592],IPO,53,China,,,[]
+Kuaishou,28,December 2019[593],January 2021[594],IPO,60.9,China,"Su Hua, Cheng Yixiao",,"['male', 'male']"
+Instacart,24,March2022(2022-03)[14],September 2023[595],IPO,11,United States,"Apoorva Mehta, Max Mullen, Brandon Leonardo",,"['male', 'male', 'male']"
+Coreweave,23,March 2025[596],March 2025[596],,23,United States,,,[]
+J&T Express,20,October 2023,October 2023,IPO,20,Indonesia,"Jet Lee, Tony Chen",,"['female', 'male']"
+CATL,20.0,March 2018[597],June 2018[598],IPO,12.3,China,,,[]
+Tencent Music,18,January 2018,December 2018[599],IPO,21.3,China,,,[]
+DoorDash,16,June 2020[600],December 2020[601],IPO,32.4,United States,"Tony Xu,Stanley Tang,Andy Fangand Evan Moore",,"['male', 'male', 'male']"
+Snap Inc,19.3,May 2016[5],March 2017[602][603],IPO,24,United States,"Evan Spiegel,Bobby Murphy, Reggie Brown",,"['male', 'male', 'male']"
+Flipkart,15.5,May 2015[604],May 2018[605],Acquired,22,India,"Sachin Bansal,Binny Bansal",,"['male', 'male']"
+Paytm,3.2,February 2024[606],November 2021[607],IPO,20,India,Vijay Shekhar Sharma,,['male']
+Lyft,15.1,June 2018[608],March 2019[609],IPO,24.0,United States,"Logan Green, John Zimmer",,"['male', 'male']"
+Adyen,15.1,March 2018[5],June 2018[610],IPO,8.3,Netherlands,"Pieter van der Does, Arnout Schuijff",,"['male', 'male']"
+Pinduoduo,15,April 2018[183],July 2018[611],IPO,60,China,Colin Huang,,['male']
+Grab,14,March 2019[612],December 2021[613],SPAC merger,40,Singapore,"Anthony Tan,Tan Hooi Ling",,"['male', 'male']"
+Pinterest,13.0,July 2018[614],April 2019[615],IPO,10.0,United States,"Ben Silbermann, Paul Sciarra, Evan Sharp",,"['male', 'male', 'male']"
+Snowflake,12.4,Feb 2020[616],Dec 2020[616],IPO,33,United States,"Benoit Dageville, Thierry Cruanes, Marcin Zukowski",,"['male', 'male', 'male']"
+Robinhood,11.7,September 2020[617],July 2021[618],IPO,26.7,United States,"Vladimir Tenev,Baiju Bhatt",,"['male', 'male']"
+Figma,10,June2021(2021-06)[619],July2025(2025-07)[620],IPO,19.3,United States,Dylan Field and Evan Wallace,,"['male', 'male']"
+Dropbox,10,January 2014[621],March 2018[622],IPO,12,United States,"Drew Houston,Arash Ferdowsi",,"['male', 'male']"
+Squarespace,10,March 2021[623],May 2021[624],Direct listing,7.4,United States,Anthony Casalena,,['male']
+Gojek,10,April 2019[625],May 2021[626],Merger toGoTo,10.5,Indonesia,"Nadiem Makarim, Kevin Aluwi",,"['male', 'male']"
+Zynga,9.1,February 2011,December 2011[627],IPO,7,United States,"Mark Pincus,Eric Schiermeyer,Justin Waldron, Michael Luxton, Steve Schoettler, and Andrew Trader",,"['male', 'male', 'male', 'male', 'male', 'male']"
+Coupang,9,November 2018[628],March 2021[629],IPO,58,South Korea,Bom Kim,,['male']
+Spotify,8.53,March 2016[5],April 2018[630],Direct listing,30,Sweden,"Daniel Ek,Martin Lorentzon",,"['male', 'male']"
+Skype,8.5,May 2011,September 2015[631],Acquired,2.6,Sweden,Niklas ZennströmandJanus Friis,,"['male', 'male']"
+Wolt,8.1,November 2021[632],September 2021[633],Acquired,8.1,Finland,"Miki Kuusi, Elias Aalto, Mika Matikainen, Oskari Pétas, Lauri Andler, Juhani Mykkänen",,"['female', 'male', 'male', 'male', 'male', 'male']"
+Toast,8,November 2020[634],September 2021[635],IPO,20,United States,,,[]
+Twitter,8,September 2011,November 2013[636],IPO,14.2,United States,"Jack Dorsey,Noah Glass,Biz Stone,Evan Williams",,"['male', 'male', 'male', 'male']"
+Coinbase,8,October 2018[637],April 2021[638],IPO,65,United States,"Brian Armstrong,Fred Ehrsam",,"['male', 'male']"
+Argo AI,7.25,July 2020[639],October 2022[640],Defunct,,United States,Bryan Salesky and Peter Rander,,"['male', 'male']"
+Tokopedia,7,December 2018[641],May 2021[626],Merger toGoTo,7.5,Indonesia,"William Tanuwijaya, Leontinus Alpha Edison",,"['male', 'female']"
+Deliveroo,7.0,January 2021[642],March 2021[643][644],IPO,10.5,United Kingdom,"Will Shu, Greg Orlowski",,"['male', 'male']"
+Roivant Sciences,7,November 2018[645],September 2021[646],SPAC merger,7.3,Switzerland,,,[]
+Slack Technologies,7.0,August 2018[647],,IPO,,United States,"Stewart Butterfield, Cal Henderson",,"['male', 'male']"
+WeWork,7,November 2019[648],October 2021[649],SPAC merger,9,United States,"Adam Newmann,Miguel McKelvey",,"['male', 'male']"
+"Compass, Inc.",6.4,July 2019[650][651],April 2021,IPO,7.0,United States,,,[]
+Gitlab,6,January 2021[652],October 2021[653],IPO,17,Ukraine[654],"Dmytro Zaporozhets; Sytse ""Sid"" Sijbrandij",,['male']
+Square,6,October 2014,November 2015[655],IPO,3.6,United States,"Jack Dorsey,Jim McKelvey",,"['male', 'male']"
+SoFi,6,May 2020,May 2021[656],SPAC merger,8.65,United States,,,[]
+Zomato,5.4,February 2021[657],July 2021,IPO,8.7,India,Deepinder Goyal,,['male']
+Samsara,5.4,May 2020[658],December 2021[659],IPO,11.6,United States,"Sanjit Biswas, John Bicket",,"['male', 'male']"
+Stemcentrx,5,September 2015,April 2016[660],Acquired,5.8,United States,,,[]
+Nowports,1.1,May 2022,IPO,Logistics,5.0,Uruguay / Mexico,"Alfonso de los Ríos, Maximiliano Casal",,"['male', 'male']"
+dLocal,6.1,April 2021[661],June 2021[662],IPO,Uruguay,,,,[]
+Groupon,4.75,December 2010[663],November 2011[664],IPO,13,United States,"Eric Lefkofsky, Brad Keywell, Andrew Mason",,"['male', 'male', 'male']"
+Krafton,5,August 2021[665],August 2021,IPO,25,South Korea,,,[]
+Confluent,4.5,April 2020[666],June 2021[667],IPO,9,United States,"Jay Kreps,Neha Narkhede, Jun Rao",,"['male', 'female', 'male']"
+Ucar,4.4,March 2017,July 2016[668],IPO,5.5,China,,,[]
+Zalando,4.03,November 2013,October 2014[669][670],IPO,6.7,Germany,,,[]
+Amplitude,4,June 2021[671],September 2021[672],IPO,5,United States,,,[]
+Peloton,4.0,August 2018[673],September 2019,IPO,8.1,United States,,,[]
+Credit Karma,4,March 2018[674],December 2020,Acquired,8.1,United States,,,[]
+Ginkgo Bioworks,4,September 2019[675],September 2021[676],SPAC merger,2.5,United States,,,[]
+Lending Club,3.8,August 2014,December 2014[677],IPO,8.5,United States,Renaud Laplanche,,['male']
+Sea Limited,3.7,March 2016,October 2017[678],IPO,5.3,Singapore,,,[]
+Freshworks,3.5,November 2019,September 2021[679],IPO,10.13,India / United States,"Girish Mathrubootham, Shan Krishnasamy",,"['male', 'male']"
+Bukalapak,3.5,April 2021[183],August 2021[680],IPO,6,Indonesia,"Achmad Zaky, Fajrin Rasyid, Nugroho Herucahyono",,"['male', 'male', 'male']"
+Wise,3.5,May 2019[681],July 2021[682],Direct listing,11,United Kingdom,,,[]
+Zhihu,3.5,August 2019[683],March 2021[684],IPO,5.3,China,,,[]
+Atlassian,3.3,April 2014,December 2015[685],IPO,7.02,Australia,,,[]
+e-Shang Redwood,3.25,July 2017[183],October 2019[686],IPO,6.7,China,,,[]
+Udemy,3.25,November 2020[687],October 2021[688],IPO,4,United States,"Oktay Caglar,Gagan Biyani,Eren Bali",,"['male', 'male', 'male']"
+SmileDirectClub,3.2,October 2018,September 2019[689],IPO,8.9,United States,,,[]
+Zoox,3.2,July 2018[690],July 2020[691],Acquired,1.3,United States,"Tim Kentley-Klay, Jesse Levinson",,"['male', 'male']"
+Oscar Health,3.2,March 2018[692],March 2021[693],IPO,7.9,United States,,,[]
+Cloudflare,3,March 2019,September 2019[694],IPO,4,United States,"Matthew Prince, Lee Holloway, andMichelle Zatlyn",,"['male', 'male', 'male']"
+Delhivery,3,May 2021[695],May 2022,IPO,4.6,India,,,[]
+Pure Storage,3,August 2014[696],October 2015,IPO,3.1,United States,,,[]
+Maoyan,3.0,November 2017,January 2019[697],IPO,2.2,China,,,[]
+Jia.com,3,February 2015[183],July 2018[698],IPO,0.74,China,,,[]
+Mogu,3,January 2016,December 2018[699],IPO,1.3,China,,,[]
+Paytm Mall,3,July 2019[700],May 2022[701],Devaluation,0.013,India,,,[]
+Luckin Coffee,2.9,April 2019[183][702],May 2019,IPO,,China,"Lu Zhengyao, Jenny Qian Zhiya",,"['male', 'female']"
+Pivotal,2.8,May 2016[5],April 2018[703][704],IPO,3.9,United States,,,[]
+Monday.com,2.7,May 2020[705],June 2021[706],IPO,6.8,Israel,"Roy Mann, Eran Kampf and Eran Zinman",,"['male', 'male', 'male']"
+Cazoo,2.6,September 2020[707],August 2021[708],SPAC merger,8,United Kingdom,,,[]
+Woowa Brothers,2.6,March 2018[466],December 2019[709],Acquired,4,South Korea,,,[]
+Ucommune,2.6,August 2018[183],November 2020,SPAC merger,0.769,China,,,[]
+Coursera,2.5,July 2020[710],March 2021[711],IPO,4.3,United States,Andrew NgandDaphne Koller,,"['male', 'female']"
+Cambricon,2.5,June 2018[183],June 2020[712],IPO,,China,,,[]
+The Hut Group,2.5,August 2017[713],September 2020[714],IPO,5.8,United Kingdom,,,[]
+Postmates,2.4,September 2019[715],December 2020[716],Acquired,2.65,United States,,,[]
+Box,2.4,July 2014,January 2015[717],IPO,1.67,United States,"Aaron Levie, Dylan Smith, Sam Ghods, Jeff Queisser",,"['male', 'male', 'male', 'male']"
+Mercari,2.4,March 2018[718],June 2018[719],IPO,3.7,Japan,,,[]
+Kingsoft,2.4,January 2018[183],May 2020[720],IPO,3.7,China,,,[]
+Sportradar,2.4,July 2018[721],September 2021[722],IPO,21,Switzerland,,,[]
+PolicyBazaar,2.4,March 2021[723],November 2021[724],IPO,6,India,"Yashish Dahiya, Alok Bansal, Avaneesh Nirjar",,"['male', 'male', 'male']"
+GoPro,2.25,December 2012,June 2014[725],IPO,2.96,United States,Nick Woodman,,['male']
+Babytree,2.19,May 2018,November 2018[726],IPO,1.47,China,,,[]
+"Roku, Inc.",2.1,September 2017,September 2017[727],IPO,2.1,United States,Anthony Wood,,['male']
+Three Squirrels,2.09,September 2015[183],July 2019[728],IPO,0.86,China,,,[]
+AppDynamics,2.05,November 2015,January 2017[729],Acquired,3.7,United States,,,[]
+AvidXchange,2,January 2020[730],October 2021[731],IPO,4.9,United States,,,[]
+Wayfair,2,March 2014,October 2014[732],IPO,2.4,United States,,,[]
+NantHealth,2,January 2016,June 2016[733],IPO,1.7,United States,,,[]
+Meitu,2,December 2014,December 2016,IPO,4.6,China,,,[]
+Nutanix,2,September 2016,September 2016,IPO,2.21,United States,,,[]
+Uxin,2.0,January 2017[183],June 2018[734],IPO,,China,,,[]
+Careem,2,October 2018,March 2019[735],Acquired,3.1,United Arab Emirates/Pakistan,"Mudassir Sheikha, Magnus Olsson",,"['male', 'male']"
+AppLovin,2,July 2018[736],April 2021[737],IPO,28.6,United States,,,[]
+ReNew Power,2,February 2017[738],August 2021[739],SPAC merger,4.5,India,Sumant Sinha,,['male']
+Deliverr,2,November 2021[740],May 2022[741],Acquired,2.1,United States,"Harish Abbott, Michael Krakaris",,"['male', 'male']"
+Auth0,1.92,July 2020[742],March 2021[743],Acquired,6.5,Argentina / United States,,,[]
+Mobileye,1.9,July 2013,August 2014,IPO,7.6,Israel,,,[]
+WalkMe,1.9,December 2019,June 2021[744],IPO,2.6,Israel / United States,,,[]
+Avito.ru,1.82,February 2014[5][745],January 2019[746],Acquired,1.16,Russia,,,[]
+23andMe,1.75,September 2017[747],June 2021[748],SPAC merger,3.5,United States,,,[]
+IronSource,1.75,October 2019[749],June 2021[750],SPAC merger,11,Israel,,,[]
+MedMen,1.65,February 2018[751],May 2018,Reverse takeover,2.0,United States,,,[]
+Better Place,1.6,November 2012,July 2013,Acquired,0.012,United States,,,[]
+Loom,1.53,May 2021[752],Video messaging,Acquired,0.975,United States,,,[]
+Farfetch,1.5,May 2016[753],September 2018[754],IPO,6.2,Portugal / United Kingdom,José Neves,,['male']
+Freshly,1.5,October 2020[755],October 2020,Acquired,1.5,United States,,,[]
+MuleSoft,1.5,May 2015,March 2015,"IPO, Acquired",6.5,United States,,,[]
+Jet.com,1.5,November 2015[756],August 2016[757],Acquired,3.3,United States,,,[]
+LivingSocial,1.5,February 2013,October 2016,Acquired,,United States,,,[]
+WhatsApp,1.5,July 2013,February 2014,Acquired,19,United States,"Brian Acton,Jan Koum",,"['male', 'male']"
+Lakala,1.5,June 2015[183],April 2019,IPO,,China,,,[]
+UCloud,1.5,June 2018[183],January 2020[758],IPO,1.9,China,,,[]
+One Medical,1.5,August 2018[759],January 2020[760],IPO,1.7,United States,,,[]
+Quikr,1.5,October 2015[761],February 2020[762],Devalued,0.57,India,Pranay Chulet,,['male']
+Letgo,1.5,August 2018[763],March 2020[764],Acquired,,Spain / United States,,,[]
+Ninebot,1.5,October 2017[183],October 2020[765],IPO,,China,,,[]
+DouYu,1.5,March 2018[183],July 2019[766],IPO,3.73,China,,,[]
+Proteus Digital Health,1.5,February 2016[767],July 2020[768],Bankruptcy,,United States,,,[]
+Duolingo,1.5,December 2019,July 2021[769],IPO,3.6,United States,,,[]
+Tuandaiwang,1.46,May 2017[183],April 2019[770],Bankruptcy,,China,,,[]
+HomeAway,1.4,October 2010,November 2016,Acquired,3.9,United States,,,[]
+Hike Messenger,1.4,August 2016[738],January 2021[771],Defunct,,India,Kavin Bharti Mittal,,['female']
+Deezer,1.4,January 2016[772],September 2016[773],Acquired,,France,,,[]
+Jasper,1.35,April 2014,February 2016,Acquired,1.4,United States,,,[]
+Paidy,1.32,March 2021[774],September 2021[775],Acquired,2.7,Japan,,,[]
+eFront,1.3,March 2019[776],May 2019[777],Acquired,1.3,France,,,[]
+Sonder Corp.,1.3,July 2020[778],January 2022[779],SPAC merger,1.9[780],United States,,,[]
+Sunrun,1.3,July 2016,August 2015,IPO,1.4,United States,,,[]
+Solstice,1.7,July 2018,December 2009,Acquired,1.3,United States,,,[]
+Darktrace,1.25,May 2018[781],April 2021[782],IPO,2.37,United Kingdom,,,[]
+Okta,1.2,March 2017,April 2017[783],IPO,2.1,United States,,,[]
+Good Technology,1.2,September 2014,September 2015,Acquired,0.425,United States,,,[]
+BigBasket,1.2,March 2019[784],February 2021[785],Acquired by TATA GroupIPO (coming soon by 2024 - 2025 FY),1.8,India,"V. S. Sudhakar, Hari Menon, Vipul Parekh, Abhinay Choudhari, V. S. Ramesh",,"['male', 'male', 'male', 'male', 'male']"
+Nykaa,1.2,April 2020[786],November 2021[787],IPO,7.4,India,Falguni Nayar,,['female']
+HeadSpin,1.16,February 2020,August 2020[788],Devalued,0.25,United States,,,[]
+Fab,1.15,August 2013,March 2015,Acquired,0.015,United States,,,[]
+Gilt Groupe,1.15,February 2015,January 2016,Acquired,0.25,United States,,,[]
+Vonage,1.11,August 2014,May 2006,IPO,2.65,United States,,,[]
+ShopClues,1.1,January 2016,October 2019[789],Acquired,0.1,India,"Sanjay Sethi, Sandeep Aggarwal,Radhika Aggarwal",,"['male', 'male', 'female']"
+Global Fashion Group,1.1,July 2016[790],July 2019[791],IPO,,Luxembourg,,,[]
+TuSimple,1.1,February 2019[792],April 2021[793],IPO,8.5,United States,,,[]
+Wheels Up,1.1,August 2019[794],July 2021,SPAC merger,2.1,United States,,,[]
+Zulily,1.09,November 2012,October 2015,Acquired,2.4,United States,,,[]
+Coupa,1.08,June 2015,October 2016,IPO,1.68,United States,,,[]
+LinkedIn,1.06,February 2016,May 2011,IPO,4.3,United States,"Reid Hoffman,Eric Ly",,"['male', 'male']"
+Twilio,1.03,July 2015,June 2016,IPO,1.2,United States,"Jeff Lawson, John Wolthuis, Evan Cooke",,"['male', 'male', 'male']"
+SimpliVity,1.03,March 2015,January 2017,Acquired,0.65,United States,,,[]
+Coveo,1.1,November 2019,November 2021[795],IPO,1.7,Canada,,,[]
+Kabam,1+,December 2016,February 2017[796],Acquired,0.8,Canada,,,[]
+Rent the Runway,1+,March 2019[797],October 2021[798],IPO,1.4,United States,,,[]
+CRF Health,1,July 2018,July 2018,Acquisition[799],1,Finland,"Timo Ahopelto, Jarkko Joki-Tokola, Jaakko Ollila",,"['male', 'male', 'male']"
+MySQL,1,January 2008,January 2008,Acquisition[800],1,Finland,Michael Widenius,,['male']
+Heptagon,1,February 2018,February 2018,Acquisition[801],1,Finland,Christian Tang-Jespersen,,['male']
+Zoom,1,January 2017,April 2019,IPO[802],9.0,United States,,,[]
+Shopify,1,December 2013,May 2015,IPO,1.3,Canada,"Tobias Lütke, Scott Lake",,"['male', 'male']"
+Truecaller,1,July 2015[803],October 2021[804],IPO,2,Sweden,Alan Mamedi and Nami Zarringhalam,,"['male', 'female']"
+Kik,1+,August 2015,October 2019,Acquired,,Canada,,,[]
+AirWatch,1,May 2013,January 2014,Acquired,1.54,United States,,,[]
+Lynda.com,1,January 2015,April 2015,Acquired,1.5,United States,,,[]
+New Relic,1,April 2014,December 2014,IPO,1.42,United States,,,[]
+Quotient Technology,1,April 2016,March 2014,IPO,1.17,United States,,,[]
+Shape Security,1,September 2019[805],December 2019[806],Acquired,1,United States,,,[]
+Futu Holdings,1+,June 2017[183],March 2019[807],IPO,,China,,,[]
+Peak Games,1+,,May 2020[808],Acquired,1.8,Turkey,,,[]
+Skyscanner,1.6,February 2016[809],November 2016[810],Acquired,1.74,United Kingdom,,,[]
+Blue Apron,2,January 2015[5],June 2017[811],IPO,2,United States,,,[]
+Stitch Fix,,,November 2017[812][813],IPO,1.5,United States,,,[]
+Shazam,1,January 2015[814],December 2017[815],Acquired,0.4,United Kingdom,,,[]
+Flywire,1+,February 2020[816],May 2021[817],IPO,2.4,United States,,,[]
+Mobike,3,July 2017[818],April 2018[819],Acquired,2.7,China,,,[]
+Ele.me,6.0,June 2017[183][820],April 2018[821],Acquired,9.5,China,,,[]
+Duo Security,1.17,October 2017[822],August 2018[823],Acquired,2.35,United States,,,[]
+Bloom Energy,2.83,January 2015[5],July 2018[824],IPO,1.6,United States,,,[]
+Moderna Therapeutics,7.5,February 2018[825],December 2018,IPO,7.5,United States,,,[]
+Vlocity,1.0,March 2019[826],February 2020[827],Acquired,1.33,United States,,,[]
+JFrog,1+,October 2018[828],September 2020[829],IPO,3.9,Israel / United States,,,[]
+Glovo,1+,December 2019[830],January 2022[831],Acquired,2.6,Spain,,,[]
+Innovent Biologics,1+,April 2018[183],November 2018[832],IPO,2.1,China,,,[]
+iTutorGroup,1+,August 2016[183],July 2019[833],Acquired,,China,,,[]
+9F,1+,March 2018[183],August 2019,IPO,2.1,China,,,[]
+Fangdd.com,1+,September 2015[183],November 2019[834],IPO,1.2,China,,,[]
+36KrMedia,1+,December 2017[183],November 2019[835],IPO,0.67,China,,,[]
+Fanli,1+,April 2015[183],March 2020[836],Direct listing,,China,,,[]
+17Zuoye,1+,March 2018[183],December 2020[837],IPO,2.2,China,,,[]
+Zimi,1+,February 2015[183],March 2021[838],Acquired,0.4,China,,,[]
+QingCloud,1+,June 2017[183],March 2021[839],IPO,0.46,China,,,[]
+Novogene,1+,November 2016[183],April 2021,IPO,,China,,,[]
+MissFresh,1+,December 2017[183],June 2021[840],IPO,2.5,China,,,[]
+Essential Products,1+,August 2017[841],February 2020[842],Defunct,,United States,,,[]

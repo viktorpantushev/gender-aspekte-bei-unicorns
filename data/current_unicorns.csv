@@ -1,0 +1,621 @@
+Company,Valuation(US$ billions),Valuation date,Industry,Country/countries,Founder(s),Founder_Genders
+Anthropic,965,May2026(2026-05)[20],Artificial Intelligence,United States,"Dario Amodei,Daniela Amodei,Jared Kaplan, Jack Clark, Ben Mann,Chris Olah","['male', 'female', 'male', 'male', 'male', 'male']"
+OpenAI,852,March2026(2026-03)[21],Artificial intelligence,United States,"Sam Altman,Elon Musk,Greg Brockman,Ilya Sutskever","['male', 'male', 'male', 'male']"
+ByteDance,600,April 2026[22],Internet,China,"Zhang Yiming, Liang Rubo","['male', 'male']"
+Stripe,159,February2026(2026-02)[23],Financial services,United States and Ireland,PatrickandJohn Collison,"['male', 'male']"
+Databricks,134,December2025(2025-12)[24],Software,United States,"Ali Ghodsi,Andy Konwinski,Ion Stoica,Reynold Xin,Matei Zaharia","['male', 'male', 'male', 'male', 'male']"
+Binance,80–90,September2021(2021-09)[14],Cryptocurrency,Canada,Changpeng Zhao,['male']
+Revolut,75,November2025(2025-11)[25],Financial technology,United Kingdom,"Nikolay Storonsky, Vlad Yatsenko","['male', 'male']"
+Shein,66,May2023(2023-05)[14],E-commerce,China,Chris Xu,['male']
+Anduril Industries,61,May 2026[26],Defense technology,United States,"Palmer Luckey,Trae Stephens, Matt Grimm, Joe Chen, Brian Schimpf","['male', 'male', 'male', 'male', 'male']"
+Canva,42,October2024(2024-10)[27],Graphic design,Australia,"Melanie Perkins,Cliff Obrecht, Cameron Adams","['female', 'male', 'male']"
+Project Prometheus,41,June2026(2026-06)[28],Artificial Intelligence,United States,"Jeff Bezos,Vik Bajaj","['male', 'male']"
+Figure AI,39,September2025(2025-09)[29],Humanoid robotics,United States,Brett Adcock,['male']
+Ramp,32,November 2025[30],Financial technology,United States,"Eric Glyman, Karim Atiyeh, Gene Lee","['male', 'male', 'male']"
+Safe Superintelligence,32,April 2025[31],Artificial Intelligence,United States and Israel,"Ilya Sutskever,Daniel Gross, Daniel Levy","['male', 'male', 'male']"
+Epic Games,31.5,June2022(2022-06)[14],Video games,United States,Tim Sweeney,['male']
+VAST Data,30,March2026(2026-03)[32],Artificial Intelligence,United States,"Renen Hallak, Shachar Fienblit, Jeff Denworth, Alon Horev","['male', 'male', 'male', 'male']"
+Telegram,30,January2021(2021-01)[33],Internet,United Arab Emirates,NikolaiandPavel Durov,"['male', 'male']"
+Scale AI,29,June 2025,Artificial intelligence,United States,"Alexandr Wang, Lucy Guo","['male', 'female']"
+Fanatics,27,June2022(2022-06)[14],E-commerce,United States,"Alan Trager, Mitch Trager,Michael Rubin[34]","['male', 'male', 'male']"
+Cognition AI,26,May 2026[35],Artificial Intelligence,United States,"Scott Wu, Steven Hao, Walden Yan","['male', 'male', 'female']"
+Chime,25,June 2025[36],Financial technology,United States,"Chris Britt, Ryan King","['male', 'male']"
+Perplexity AI,20,September2025(2025-09)[37],Artificial Intelligence,United States,"Aravind Srinivas,Denis Yarats, Johnny Ho,Andy Konwinski","['male', 'male', 'male', 'male']"
+Chobani,20,October 2025[38],Consumer staples,United States,Hamdi Ulukaya,['male']
+Groq,20,Dec 2025[39],Artificial intelligence,United States,Jonathan Ross,['male']
+Miro,17.5,January2022(2022-01)[40],Software,United States,Andrey Khusid,['male']
+Rippling,16.8,May 2025[41],Workforce management,United States,,[]
+Helion Energy,15.5,June 2026[42],Fusion power,United States,"David Kirtley, Chris Pihl, George Votroubek","['male', 'male', 'male']"
+Yuanfudao,15.5,October2020(2020-10)[43],Educational technology,China,Yong Li,['male']
+Discord,15,September2021(2021-09)[44],Software,United States,"Jason Citron, Stanislav Vishnevsky","['male', 'male']"
+DJI,15,September2016(2016-09)[1],Technology,China,Frank Wang(Wang Tao),['male']
+GoPuff,15,July2021(2021-07)[45],E-commerce,United States,"Yakir Gola, Rafael Ilishayev","['male', 'male']"
+Nscale,14.6,March 2026[46],Artificial Intelligence,United Kingdom,Josh Payne,['male']
+Mistral AI,14,September2025(2025-09)[47],Artificial Intelligence,France,"Arthur Mensch, Guillaume Lample, Timothée Lacroix","['male', 'male', 'male']"
+Xiaohongshu,14,September2023(2023-09)[48],E-commerce,China,"Miranda Qu Fang, Charlwin Mao Wenchao","['female', 'male']"
+Helsing,14,September2025(2025-09)[49],Defense,Germany,"Torsten Reil, Gundbert Scherf, Niklas Köhler","['male', 'male', 'male']"
+Skild AI,14,January 2026[50],Robotics,United States,Deepak Pathak,['male']
+Plaid,13.4,April2021(2021-04)[51],Financial technology,United States,"Zach Perret,William Hockey","['male', 'male']"
+OpenSea,13.3,August 2025[52],Financial Technology,United States,"Devin Finzer, Chris Maddern","['male', 'male']"
+Grammarly,13,November2021(2021-11)[53],Collaborative software,Ukraine[54]/United States[55],"Alex Shevchenko, Max Lytvyn, and Dmytro Lider","['male', 'male', 'male']"
+Shield AI,12.6,March 2026[56],Defense Technology,United States,"Brandon Tseng, Ryan Tseng, and Andrew Reiter","['male', 'male', 'male']"
+Devoted Health,12.6,October2021(2021-10)[57],Healthcare,United States,Todd Park,['male']
+Faire,12.59,November2021(2021-11)[58],E-commerce,United States,Max Rhodes,['male']
+Labs,12.5,April2025(2025-04)[59][60],"Frontier Intelligences, Superintelligence, Human-enhancement AI",United States,"Duránd F. Davis Jr., and Maya Elz Davis","['male', 'female']"
+NinjaOne,12.3,June 2026[61],Software,United States,Sal Sferlazzaand Chris Matarese,['male']
+Thinking Machines Lab,12,July 2025[62],Artificial intelligence,United States,Mira Murati,['female']
+OpenEvidence,12,January 2026[63],Health Technology,United States,Daniel Nadler,['male']
+Biosplice Therapeutics,12,April 2021[64],Health,United States,Osman Kibar,['male']
+Bitmain,12,June 2018,Cryptocurrency,China,Jihan Wu,['male']
+GoodLeap,12,October 2021[65],Financial technology,United States,"Hayes Barnard, Jason Walker, Matt Dawson","['male', 'male', 'male']"
+Kalshi,22,May 2026[66],Finance,United States,Tarek MansourandLuana Lopes Lara,"['male', 'female']"
+Checkout.com,12,September 2025[67],Financial technology,United Kingdom,Guillaume Pousaz,['male']
+Whatnot,11.5,November 2025[68],E-Commerce,United States,"Grant LaFontaine (CEO), Logan Head","['male', 'male']"
+Airtable,11,December 2021[69],Collaborative software,United States,"Howie Liu, Andrew Ofstad, Emmett Nicholas","['male', 'male', 'male']"
+Celonis,11,June 2021[70],Software,Germany,"Alex Rinke, Bastian Nominacher, Martin Klenk","['male', 'male', 'male']"
+ElevenLabs,11,February 2026[71],AI Audio technologies,Poland,"Mati Staniszewski, Piotr Dabkowski","['male', 'male']"
+Harvey,11,March 2026[72],Artificial intelligence,United States,"Winston Weinberg, Gabriel Pereyra","['male', 'male']"
+ZongMu Technology,11,June 2021[73],Self-driving cars,China,Tang Rui[74],['male']
+Bilt Rewards,10.75,July 2025,Financial Technology,United States,Ankur Jain,['male']
+Colossal Biosciences,10.2,January 2025[75],Biotechnology,United States,"George Church,Ben Lamm","['male', 'male']"
+Alchemy,10.2,January 2022[76],Blockchain,United States,Joe Lau and Nikil Viswanathan,"['male', 'male']"
+WHOOP,10.1,March2026(2026-03)[77],Wearable technology,United States,,[]
+Chehaoduo,10,July 2021[78],Marketplace,China,,[]
+Digital Currency Group,10,November 2021[79],Venture capital,United States,,[]
+Mercor,10,October 2025[80],Artificial Intelligence,United States,"Brendan Foody, Adarsh Hiremath, Surya Midha","['male', 'male', 'male']"
+Gusto,10,August 2021[81],Software,United States,"Joshua Reeves, Edward Kim, Tomer London","['male', 'male', 'male']"
+KuCoin,10,May 2022[82],Cryptocurrency,Seychelles,,[]
+Lalamove,10,January 2021[83],Supply chain management,Hong Kong / China,,[]
+Notion Labs,10,October 2021[84],Productivity software,United States,,[]
+Polygon Technology,10,February 2022[85],"Blockchain,Web3",India / Cayman Islands[86],,[]
+Ripple,10,December 2019[87],Cryptocurrency,United States,,[]
+Talkdesk,10,August 2021[88],Software as a service,Portugal / United States,"Cristina Fonseca, Tiago Paiva","['female', 'male']"
+Oyo,9.6,August 2021[89],Hospitality,India,Ritesh Agarwal,['male']
+OutSystems,9.5,February 2021[90],Software development,Portugal[91]/ United States[92],"Paulo Rosado, Rui Pereira","['male', 'male']"
+Vercel,9.3,September 2025[93],Cloud computing / AI,United States,Guillermo Rauch,['male']
+HeyTea,9.3,July 2021[94],Retail,China,,[]
+Neuralink,9,May 2025[95],Neurotechnology,United States,Elon Musk,['male']
+Replit,9,March2026(2026-03)[96],Artificial Intelligence,United States,"Amjad Masad, Faris Masad, Haya Odeh","['male', 'male', 'female']"
+Tanium,9,June 2020[97],Cybersecurity,United States,"David Hindawi,Orion Hindawi","['male', 'male']"
+Kavak,8.7,October 2021[98],Marketplace,Mexico,,[]
+Rapyd,8.7,August 2021[99],Financial technology,United Kingdom,,[]
+Nuro,8.6,November 2021[100],Robotics,United States,,[]
+Snyk,8.5,September 2021[101],Application security,United Kingdom,"Assaf Hefetz, Danny Grander","['male', 'male']"
+Bolt,8.4,January 2022[102],Transportation,Estonia,Markus Villig,['male']
+Dream11,8,November 2021[103],Fantasy sports,India,"Harsh Jain, Bhavit Sheth","['male', 'male']"
+Flexport,8,February 2022[104],Logistics,United States,Ryan Petersen,['male']
+Airwallex,8,December 2025[105],Financial services,Australia / Hong Kong,,[]
+StarkWare Industries,8,May 2022[106],Blockchain,Israel,"Eli Ben-Sasson, Michael Riabzev, Uri Kolodny, Alessandro Chiesa","['female', 'male', 'male', 'male']"
+Dapper Labs,7.6,September 2021[107],NFT,Canada,,[]
+Zipline,7.6,January 2026[108],Logistics,United States,,[]
+AlphaSense,7.5,June 2026[109],Software,United States (formerly Finland),"Jaakko Kokko, Raj Neervannan","['male', 'male']"
+Razorpay,7.5,December 2021[110],Financial technology,India,"Harshil Mathur, Shashank Kumar","['male', 'male']"
+Carta,7.4,August 2021[111],Software,United States,Henry Ward,['male']
+Ola Consumer,7.3,December 2021[112],Transportation,India,"Bhavish Aggarwal, Ankit Bhati","['male', 'male']"
+Gong,4.5,November 2025[113],June 2021[114],Artificial intelligence,United States,['male']
+PsiQuantum,7,March 2025[115],Quantum computing,United States,Jeremy O'BrienTerry RudolphPeter ShadboltMark Thompson,['male']
+Automation Anywhere,6.8,November 2019[116],Robotic process automation,United States,,[]
+1Password,6.8,July 2021[117],Password manager,Canada,,[]
+WeDoctor,6.8,February 2021[118],Healthcare,China,,[]
+Cohere,6.8,August 2025[119],Artificial intelligence,Canada,"Aidan Gomez, Ivan Zhang,Nick Frosst","['male', 'male', 'male']"
+Yanolja,6.7,July 2021[120],Hospitality,South Korea,Lee Su-jin,['male']
+Ziroom,6.6,March 2020[121],Real estate technology,China,,[]
+Lovable,6.6,December 2025[122],Artificial intelligence,Sweden,"Anton Osika, Fabian Hedin","['male', 'male']"
+Mollie,6.5,June 2021[123],Financial technology,Netherlands,,[]
+CRED,6.4,June 2022[124],Financial technology,India,Kunal Shah,['male']
+DataRobot,6.3,July 2021[125],Artificial intelligence,United States,,[]
+Personio,6.3,October 2021[126],Software,Germany,,[]
+Doctolib[fr],6.2,August 2022[127],Healthcare,France,,[]
+iCapital,6,2022[128],Financial services,United States,,[]
+Xingsheng Youxuan,6,January 2021[129],Retail,China,,[]
+SandboxAQ,5.6,December 2024[130],"Quantum technology,Artificial intelligence",United States,Jack HidaryEric Schmidt,['male']
+Back Market,5.8,August 2022[127],Marketplace,France,,[]
+The Boring Company,5.7,April 2022[131],Construction,United States,Elon Musk,['male']
+Relex,5.68,February 2022[132],Supply Chain Automation,Finland,"Johanna Småros, Mikko Kärkkäinen, and Michael Falck","['female', 'male', 'male']"
+Contentsquare,5.6,August 2022[127],Software as a service,France,,[]
+Fivetran,5.6,September 2021[133],Data infrastructure,United States,,[]
+Postman,5.6,August 2021[134],Software as a service,India / United States,,[]
+PhonePe,5.5,December 2020[135],Financial technology,India,"Sameer Nigam, Rahul Chari","['male', 'male']"
+Viva Republica(Toss),5.48,June 2021[136],Financial technology,South Korea,,[]
+Trade Republic,5.3,May 2021[137],Financial technology,Germany,,[]
+Rappi,5.25,July 2021[138],Transportation,Colombia,,[]
+Oura Health,5.2,December 2024[139],Wearables,Finland,"Petteri Lahtela, Kari Kivelä, and Markku Koskela","['male', 'female', 'male']"
+Blockchain.com,5.2,March 2021[140],Cryptocurrency,United Kingdom,,[]
+Ineffable Intelligence,5.1,April2026(2026-04)[141],Artificial intelligence,United Kingdom,David Silver,['male']
+OneTrust,5.1,December 2020[142],Cybersecurity,United Kingdom / United States,,[]
+SambaNova,5.1,April 2021[143],Artificial intelligence,United States,,[]
+Collibra,5+,January 2019[144],Data governance,Belgium,"Pieter De Leenheer, Felix Van de Maele, Stijn Christiaens","['male', 'male', 'male']"
+CloudKitchens,5,November 2019[145],Ghost kitchen,United States,,[]
+Hello TransTech,5,March 2021[146],Transportation,China,,[]
+Hopper,5,August 2021[147],Travel,Canada,,[]
+OfBusiness,5,December 2021[148],B2B e-commerce,India,"Bhuvan Gupta, Vasant Sridhar, Ruchi Kalra, Nitin Jain, Asish Mohapatra","['male', 'male', 'female', 'male', 'male']"
+Qonto,5,August 2022[127],Finance,France,,[]
+Ro,5,March 2021[149],Health technology,United States,,[]
+GetBlock,4.6,June 2020,Blockchain,Georgia,Steven Lloyd,['male']
+Zepz,5,August 2021[150],Financial technology,United Kingdom,,[]
+Animoca Brands,5,January 2022[151],Blockchain gaming,Hong Kong,Yat Siu,['male']
+Octopus Energy,5,December 2021[152],Energy supply,United Kingdom,,[]
+Pleo,4.7,December 2021[153],Financial technology,Denmark,,[]
+Checkr,4.6,August 2021[154],Human resource management,United States,,[]
+Dataiku,4.6,August 2021[155],Artificial intelligence,France / United States,,[]
+Sorare,4.6,August 2022[127],Fantasy sports,France,,[]
+Magic Leap,4.5,February 2016[1][5],Augmented reality,United States,,[]
+Socure,4.5,November 2021[156],Identity management,United States,,[]
+Vinted,4.5,May 2021[157],Marketplace,Lithuania,"Milda Mitkutė, Justas Janauskas","['female', 'male']"
+Quince,4.5,July 2025[158],Enterprise Technology,United States,"Sid Gupta, Zunu Mittal, Sourabh Mahajan","['male', 'male', 'male']"
+Outreach,4.4,June 2021[159],Sales,United States,,[]
+Arctic Wolf Networks,4.3,July 2021[160],Cybersecurity,United States,,[]
+Chainalysis,4.2,June 2021[161],Blockchain,United States,,[]
+Relativity Space,4.2,June 2021[162],Aerospace,United States,,[]
+Bitpanda,4.1,August 2021[163],Cryptocurrency,Austria,,[]
+Dataminr,4.1,March 2021[164],Data analytics,United States,,[]
+Yello Mobile,4.05,November 2016[5][165],Software industry,South Korea,,[]
+Abnormal Security,4,May 2022[166],Cybersecurity,United States,"Evan Reiser, Sanjay Jeyakumar","['male', 'male']"
+Branch Metrics,4,February 2022[167],Marketing,United States,,[]
+BrowserStack,4,June 2021[168],Software,India,"Ritesh Arora, Nakul Aggarwal","['male', 'male']"
+Clubhouse,4,April 2021[169],Messaging,United States,Paul Davison and Rohan Seth,"['male', 'male']"
+Houzz,4,June 2017[170],Interior design,United States,,[]
+Megvii,4,May 2019[171],Technology,China,,[]
+Melio,4,September 2021[172],Financial technology,Israel,,[]
+Patreon,4,April 2021[173],Online membership service,United States,"Jack Conte, Sam Yam","['male', 'male']"
+PointClickCare,4,January 2021[174],Software,Canada,,[]
+QuintoAndar,4,May 2021[175],Real estate,Brazil,,[]
+Niantic,3.95,January 2019[176],Video games,United States,,[]
+StockX,3.8,April 2021[177],E-commerce,United States,,[]
+Articulate,3.75,July 2021[178],Educational technology,United States,,[]
+Cohesity,3.7,March 2021[179],Software,United States,,[]
+Noom,3.7,May 2021[180],Healthcare,United States,,[]
+PAPAYA Global,3.7,September 2021[181],Workforce management,Israel / United States,,[]
+ShareChat,3.7,December 2021[182],Social network,India,"Ankush Sachdeva, Bhanu Pratap Singh, Farid Ahsan","['male', 'male', 'male']"
+Shouqi,3.55,December 2016[183],Transportation,China,,[]
+Coalition,3.5,September 2021[184],Cybersecurity,United States,,[]
+Commure,3.5,September 2021[185],Health technology,United States,,[]
+Mirakl,3.5,September 2021[186],Marketplace,France,,[]
+N26,3.5,July 2019[187],Financial services,Germany,,[]
+Preferred Networks,3.33,September 2019[188],Artificial intelligence,Japan,,[]
+CARS24,3.3,December 2021[189],Marketplace,India,"Vikram Chopra, Mehul Agrawal, Gajendra Jangid and Ruchit Agarwal","['male', 'male', 'male', 'male']"
+Kurly,3.3,July 2021[190],E-commerce,South Korea,,[]
+Youxia Motors,3.3,October 2018[191],Electric vehicles,China,,[]
+MoonPay,3.4,November 2021[192],Cryptocurrency,United States,,[]
+Upstox,3.4,November 2021[193],Financial technology,India,"Ravi Kumar, Kavitha Subramanian, Shrini Viswanath","['male', 'female', 'male']"
+Plus.ai,3.3,May 2021[194],Self-driving trucks,United States,,[]
+Starburst Data,3.3,February 2022[195],Data analytics,United States,"Justin Borgman, Matt Fuller, Kamil Bajda-Pawlikowski, Anu Sudarsan, Wojciech Biela, Grzegorz Kokosiński, Lukasz Osipiuk, Martin Traverso[196]","['male', 'male', 'male', 'female', 'male', 'male', 'male', 'male']"
+Thumbtack,3.2,June 2021[197],Software,United States,Marco Zappacosta,['male']
+ApplyBoard,3.2,June 2021[198],Educational technology,Canada,"Martin Basiri, Massi Basiri, Meti Basiri","['male', 'male', 'male']"
+Blockstream,3.2,August 2021[199],Blockchain,Canada,,[]
+ConsenSys,3.2,November 2021[200],Blockchain,United States,,[]
+Verkada,3.2,September 2022[201],Physical security,United States,"Filip Kailiszan, James Ren, Benjamin Bercowitz, Hans Robertson","['male', 'male', 'male', 'male']"
+Eruditus,3.2,August 2021[202],Educational technology,India,,[]
+SpotOn,3.15,September 2021[203],Financial technology,United States,,[]
+TiendaNube,3.1,August 2021[204],E-commerce,Argentina,,[]
+Udaan,3.1,January 2021[205],B2B e-commerce,India,"Vaibhav Gupta, Amod Malviya, Sujeet Kumar","['male', 'male', 'male']"
+Wildlife,3+,August 2020[206],Mobile gaming,Brazil,,[]
+CMR Surgical,3,January 2021[207],Robotics,United Kingdom,,[]
+Traveloka,3,January 2017[208],Travel,Indonesia,,[]
+ActiveCampaign,3,April 2021[209],Marketing,United States,,[]
+"Age of Learning, Inc.",3,June 2021[210],Education,United States,,[]
+Automattic,3,September 2019[211],Internet,United States,Matt Mullenweg,['male']
+Calendly,3,January 2021[212],Software,United States,Tope Awotona[213],['male']
+Contentful,3,July 2021[214],Content management system,Germany,,[]
+Forter,3,May 2021[215],Software,Israel / United States,,[]
+Grafana Labs,3,August 2021[216],Software,United States,,[]
+Lucid Software,3,June 2021[217],Software,United States,,[]
+MessageBird,3,October 2020[218],Cloud communications,Netherlands,,[]
+Seismic,3,August 2021[219],Software,United States,,[]
+Sky Mavis,3,October 2021[220],Video games,Vietnam,,[]
+Souche,3,September 2018[221],Marketplace,China,,[]
+TradingView,3,October 2021[222],Finance,United Kingdom,,[]
+Aiven,3,May 2022[223],Data infrastructure,Finland,"Hannu Valtonen, Heikki Nousiainen, Oskari Saarenmaa","['male', 'male', 'male']"
+VANCL,3,February 2014[5],E-commerce,China,,[]
+Veepee,3,August 2022[127],E-commerce,France,,[]
+VIPKID,3,June 2018[224],Education,China,,[]
+Wefox,3,June 2021[225],Insurance,Germany,,[]
+Workrise,2.9,May 2021[226],Workforce management,United States,,[]
+DriveWealth,2.85,August 2021[227],Financial technology,United States,,[]
+BharatPe,2.8,August 2021[228],Financial technology,India,Ashneer Grover,['male']
+Icertis,2.8,March 2021[229],Software,India / United States,"Samir Bodas, Monish Darda.","['male', 'male']"
+OakNorth,2.8,February 2019[230],Finance,United Kingdom,,[]
+Astranis,2.8,May 2026,Space technology,United States,"John Gedmark, Ryan McLinko","['male', 'male']"
+Abridge,2.75,May 2025[231],Healthcare technology and AI,United States,Shiv Rao,['male']
+Illumio,2.75,June 2021[232],Cybersecurity,United States,,[]
+MasterClass,2.75,May 2021[233],Educational technology,United States,,[]
+Dream Games,2.75,January2022(2022-01)[234],Gaming,Turkey,,[]
+Daangn Market,2.7,August 2021[235],E-commerce,South Korea,,[]
+Tridge,2.7,August 2022[236],Software as a service,South Korea,,[]
+Nextiva,2.7,September 2021[237],Software,United States,,[]
+Tradeshift,2.7,March 2021[238],Financial technology,United States,,[]
+Odoo,2.63,July 2021[239],CRM,Belgium,,[]
+AmWINS Group,2.6,October 2016[240],Insurance,United States,,[]
+ManoMano,2.6,July 2021[241],E-commerce,France,,[]
+Pendo,2.6,July 2021[242],Software,United States,,[]
+Sourcegraph,2.6,July 2021[243],Developer platform,United States,,[]
+Jumpcloud,2.56,September 2021[244],Software,United States,,[]
+Cato Networks,2.5,October 2021[245],Cybersecurity,Israel,,[]
+EasyA,2.5,May 2024[246],Technology,United Kingdom,"Phil Kwok, Dom Kwok","['male', 'male']"
+Infra.Market,2.5,August 2021[247],Marketplace,India,"Aaditya Sharda, Souvik Sengupta","['male', 'male']"
+DriveNets,2.5+,August 2022[248],"Network operating system,Software-defined networking, Software as a service",Israel,"Ido Susan, Hillel Kobrinsky","['male', 'male']"
+Mews,2.5,January 2026[249],Hospitality management platform,Czech Republic,Richard Valtr,['male']
+Monzo,2.5,June 2019[250],Financial services,United Kingdom,,[]
+Suno,2.45,November 2025[251],Artificial intelligence,United States,,[]
+Ualá,2.45,November 2019,Personal finance,Argentina,,[]
+HoneyBook,2.4,November 2021[252],Financial services,Israel / United States,,[]
+BitSight,2.4,September 2021[253],Cybersecurity,United States,"Nagarjuna Venna, Stephen Boyer","['female', 'male']"
+Exabeam,2.4,June 2021[254],Cybersecurity,United States,,[]
+Paxos,2.4,April 2021[255],Cryptocurrency,United States,,[]
+Mozido,2.39,October 2014[5],E-commerce,United States,,[]
+Headway,2.3,July 2024[256],Healthcare,United States,Andrew Adams,['male']
+Highspot,2.3,February 2021[257],Sales,United States,,[]
+MPL,2.3,September 2021[258],Mobile gaming,India,,[]
+Uzum,2.3,March 2026[259],"E-commerce, Financial technology",Uzbekistan,"Djasur Djumaev, Nikolay Seleznev, Roman Lavrentyev","['male', 'male', 'male']"
+Uptake,2.3,November 2017[260],Asset performance management,United States,,[]
+Algolia,2.25,June 2021[261],Software,France / United States,,[]
+KeepTruckin,2.25,June 2021[262],Logistics,United States,,[]
+Acorns,2.2,May 2021[263],Financial technology,United States,,[]
+Bitso,2.2,May 2021[264],Cryptocurrency,Mexico,,[]
+Gympass,2.2,June 2021[265],Fitness,Brazil / United States,,[]
+Transmit Security,2.2,June 2021[266],Cybersecurity,Israel / United States,,[]
+Addepar,2.17,June 2021[267],Financial technology,United States,,[]
+Eightfold.ai,2.1+,June 2021[268],Artificial intelligence,United States,,[]
+Gamma,2.1,November 2025[269],Artificial intelligence,United States,Grant Lee,['male']
+PayFit,2.1,January2022(2022-01)[270],Software,France,"Ghislain de Fontenay, Firmin Zoccchetto, Florian Fournier","['male', 'male', 'male']"
+6sense,2.1,March 2021[271],Artificial intelligence,United States,,[]
+C6 Bank,2.1,December 2020[272],Financial services,Brazil,,[]
+Mambu,2.1,January 2021[273],Financial technology,Germany,,[]
+Webflow,2.1,January 2021[274],Web development,United States,,[]
+bKash,2+,November 2021[275][276],Mobile financial services,Bangladesh,Kamal Quadir,['male']
+Bought By Many,2+,June 2021[277],Insurance,United Kingdom,,[]
+FlixMobility,2+,August 2019[278],Transportation,Germany,,[]
+Tipalti,2+,October 2020,Financial technology,United States / Israel,,[]
+Hive,2,April 2021[279],Artificial intelligence,United States,"Kevin Guo, Dmitriy Karpman","['male', 'male']"
+Mural,2,July 2021[280],Technology,Argentina / United States,Patricio Jutard,['male']
+AppsFlyer,2,November 2020[281],Mobilemarketinganalytics,Israel / United States,,[]
+BlaBlaCar,2,April 2021[282],Transportation,France,,[]
+Calm,2,December 2020[283],Digital health,United States,"Michael Acton Smith,Alex Tew","['male', 'male']"
+ClickHouse,2,October 2021[284],Database management,United States,,[]
+Clip,2,June 2021[285],Financial technology,Mexico,,[]
+Cockroach Labs,2,January 2021[286],Database management,United States,,[]
+Divvy Homes,2,August 2021[287],Real estate technology,United States,,[]
+Druva,2,April 2021[288],Cloud computing,India / United States,,[]
+Exotec,2,August 2022[127],Robotics,France,,[]
+Firstp2p,2,September 2016[5],Financial services,China,,[]
+Formlabs,2,May 2021[289],3D printing,United States,,[]
+Huimin.cn,2,September 2016[183],B2B e-commerce,China,,[]
+Iterable,2,June 2021[290],Marketing,United States,,[]
+Kry,2,April 2021[291][292],Healthcare,Sweden,,[]
+Meicai.cn,2,June 2016[183],"Agriculture, E-commerce",China,,[]
+Mynt,2,November 2021[293],Financial technology,Philippines,,[]
+OPay,2,August 2021[294],Financial technology,Nigeria,,[]
+Sword Health,2,November 2021[295],Health,Portugal / United States[92],"Virgílio Bento, Márcio Colunas","['male', 'male']"
+Trendy International Group,2,February 2012[5][296],"Fashion, Retail",China / Hong Kong,,[]
+Unqork,2,October 2020[297],Software development,United States,,[]
+Zerodha,2,May 2021[298],Financial technology,India,,[]
+Instabase,2,June 2023[299],Software,United States,Anant Bhardwaj,['male']
+Zilch,2,November 2021[300],Financial technology,United Kingdom,,[]
+Akulaku,2,February 2022[301],Financial technology,Indonesia,,[]
+Ankorstore,1.98,August 2022[127],Marketplace,France,,[]
+Avant,1.98,September 2015[5],Consumer finance,United States,,[]
+ThoughtSpot,1.95,August 2019[302][303],Analytics,United States,,[]
+Sanpower Group,1.93,March 2018[183],Holding company,China,,[]
+ZigBang,1.93,June 2022[304],Property technology,South Korea,,[]
+Bunq,1.9,July 2021[305],Financial services,Netherlands,,[]
+CoinSwitch Kuber,1.9,October 2021[306],Cryptocurrency,India,"Ashish Singhal, Vimal Sagar Tiwari, Govind Soni","['male', 'male', 'male']"
+Dfinity,1.9,August 2018[307],Cloud computing,Switzerland,,[]
+Prosper Marketplace,1.9,August 2015[5],Financial technology,United States,,[]
+Musinsa,1.89,November 2019[308],Fashion,South Korea,,[]
+Apus Group,1.85,August 2017[183],Mobile internet,China,,[]
+MEGAZONE,1.83,Aug 2022[309],Cloud computing,South Korea,,[]
+Landa Digital Printing,1.8,June 2018[310],Printing,Israel,,[]
+Lightricks,1.8,September 2021[311],Software development,Israel,,[]
+NantOmics,1.8,June 2015[5],Biotechnology,United States,,[]
+Orca Security,1.8,October 2021[312],Cybersecurity,Israel,,[]
+Quora,1.8,April 2017[313],Social network,United States,,[]
+Radiant Nuclear,1.8,December 2025[314],Energy Technology,United States,,[]
+Zocdoc,1.8,August 2015[5],Healthcare,United States,,[]
+L&P Cosmetic,1.78,March 2018[308],Cosmetics,South Korea,,[]
+Creditas,1.75,December 2020,Financial services,Brazil,,[]
+Spinny,1.75,November 2021[315],Marketplace,India,"Niraj Singh, Ramanshu Mahaur, Ganesh Pawar, Mohit Gupta","['male', 'male', 'male', 'male']"
+Trulioo,1.75,June 2021[316],Identity management,Canada,,[]
+Productboard,1.725,February 2022[317],Product management platform,Czech Republic,"Daniel Hejl, Hubert Palan","['male', 'male']"
+ADVASA,1.7,January 2023[318],Software,Japan,,[]
+Carsome,1.7,Jan 2022[319],Marketplace,Malaysia,,[]
+Dragos,1.7,October 2021[320],Cybersecurity,United States,,[]
+Dutchie.com,1.7,March 2021[321],Cannabis,United States,,[]
+GVE,1.7,January 2023[318],Software,Japan,,[]
+Harness,1.7,June 2021[322],Software,United States,Jyoti Bansal,['female']
+PAX Labs,1.7,April 2019[323],Cannabis,United States,,[]
+Vestiaire Collective,1.7,September 2021[324],Marketplace,France,,[]
+Voodoo,1.7,August 2022[127],Gaming,France,,[]
+Workato,1.7,December 2020,Technology,United States,,[]
+Alan,1.68,April 2021[325],Health technology,France,,[]
+Incredible Health,1.65,August 2022[326],Healthcare Technology,United States,"Iman Abuzeid, Rome Portlock","['male', 'male']"
+HiBob,1.65,October 2021[327],HR technology,Israel /  United States,,[]
+Solarisbank,1.65,July 2021[328],Financial technology,Germany,,[]
+Wayflyer,1.6,Feb 2022[329],Financial technology,Ireland,,[]
+Aiways,1.6,April 2018[183],Electric vehicles,China,,[]
+Cresta,1.6,March 2022[4],Artificial intelligence,United States,"Sebastian Thrun, Tim Shi, Zayd Enam","['male', 'male', 'male']"
+Clari,1.6,March 2021[330],Software,United States,,[]
+Clio,1.6,April 2021[331],Legal technology,Canada,,[]
+Cognite,1.6,May 2021,Software,Norway,,[]
+HomeLight,1.6,September 2021[332],Real estate,United States,,[]
+Nord Security,1.6,April 2022[333],VPN service,Lithuania,"Tom Okman, Eimantas Sabaliauskas, Jonas Karklys","['male', 'male', 'male']"
+SafetyCulture,1.6,May 2021[334],Technology,Australia,Luke Anear,['male']
+SmartHR,1.6,May 2021[335],HR technology,Japan,,[]
+Unite Us,1.6,March 2021[336],Healthcare,United States,,[]
+Vanta,1.6,June 2022[337],Cybersecurity,United States,Christina Cacioppo,['female']
+CureFit,1.56,November 2021[338],,India,"Mukesh Bansal, Ankit Nagori","['male', 'male']"
+HeartFlow,1.5+,February 2018[339],Healthcare,United States,,[]
+KreditBee,1.5,April2026(2026-04)[340],Financial technology,India,Madhusudan Ekambaram,['male']
+Airbyte,1.5,December 2021[341],Software,United States,"Michel Tricot, John Lafleur","['male', 'male']"
+Andela,1.5,September 2021[342],Education,Nigeria/ United States,,[]
+Culture Amp,1.5,July 2021[343],Software,Australia,,[]
+"Devo, Inc.",1.5,October 2021[344],Software,Spain,,[]
+Granola,1.5,March 2026[345],Software,United Kingdom,"Christopher Pedregal, Sam Stephenson","['male', 'male']"
+ID.me,1.5,March 2021[346],Identity verification service,United States,,[]
+Ledger,1.5,June 2021[347],Cryptocurrency,France,,[]
+Matillion,1.5,September 2021[348],Data analytics,United Kingdom,,[]
+MOLOCO,1.5,August 2021[349],Advertising technology,United States,,[]
+Molbio Diagnostics,1.5,February 2023[350],Medical device,India,,[]
+Mu Sigma,1.5,February 2013[351],Management consulting,India / United States,,[]
+NextSilicon,1.5,June 2021[352],Semiconductors,Israel,,[]
+NotCo,1.5,July 2021[353],Food technology,Chile,,[]
+Podium,1.5,August 2019[354],Software,United States,,[]
+Remote,1.5,July 2021[355],Software,Portugal[356]/ United States[92],"Marcelo Lebre, Job van der Voort","['male', 'male']"
+Render,1.5,"February17,2026(2026-02-17)[357]",Cloud computing,United States,Anurag Goel,['male']
+Spring Rain Software,1.5,June 2016[183],,China,,[]
+Starling Bank,1.5,March 2021[358],Financial technology,United Kingdom,,[]
+5ire,1.5+,July 2022[359],Technology,India,Pratik Gauri,['male']
+Tujia.com,1.5,October 2017[360][361],,China,,[]
+ZBJ.com,1.5,June 2015[183],,China,,[]
+Ascend Money,1.5,September 2021[362],Financial technology,Thailand,,[]
+Hellobike,1.47,June 2018[183],,China,,[]
+Suning Sports,1.47,July 2018[183],Holding company,China,,[]
+Koudai Gouwu,1.45,October 2014[183],,China,,[]
+M1 Finance,1.45,July 2021[363],Financial technology,United States,,[]
+Zeta,1.45,May 2021[364],Financial technology,India,"Bhavin Turakhia, Ramki Gaddipati","['male', 'male']"
+Einride,1.44,April 2022[92],Technology,Sweden,,[]
+Eucalyptus Health,1.4,2026[365][366],Health,Australia,"Tim DoyleCharlie Gearside
+Benny Kleist
+Alexey Mitko",['male']
+Deliverect,1.4,January 2022[367],Ordering software for POS,Belgium,,[]
+Away,1.4,May 2019[368],Retail,United States,,[]
+OneCard,1.4+,July 2022[369],Financial technology,India,"Anurag Sinha, Rupesh Kumar, Vaibhav Hathi","['male', 'male', 'male']"
+Bucketplace,1.4,May 2022[370],Interior design,South Korea,,[]
+Cabify,1.4,January 2018[371],Transportation,Spain,,[]
+Chargebee,1.4,April 2021[372],Financial technology,India / United States,,[]
+Epidemic Sound,1.4,March 2021[373],Music,Sweden,"Peer Åström, David Stenmarck, Oscar Höglund, Jan Zachrisson","['male', 'male', 'male', 'male']"
+Five Star Finance,1.4,March 2021[374],Financial services,India,,[]
+IAD,1.4,Oct 2021[375],Real estate,France,,[]
+NetDocuments,1.4,May 2021[376],Software,United States,,[]
+"Panther Labs, Inc.",1.4,December 2021[377],Computer security,United States,Jack Naglieri,['male']
+Pristyn Care,1.4,December 2021[378],Health technology,India,,[]
+"QOMPLX, Inc.",1.4,March 2021,Computer security,United States,,[]
+Rebel Foods,1.4,October 2021[379],Ghost kitchen,India,,[]
+Slash,1.4,April 2026[380],Financial technology,United States,"Victor Cardenas, Kevin Bai","['male', 'male']"
+Stash,1.4,February 2021[381],Financial technology,United States,,[]
+Symphony,1.4,June 2019[382][383],Software,United States,,[]
+Voyager,1.4,April 2022[384],Financial technology,Philippines,,[]
+Yotpo,1.4,March 2021[385],Marketing,Israel / United States,,[]
+RIDI,1.33,August 2021[386],E-commerce,South Korea,,[]
+Zetwerk,1.33,August 2021[387],,India,,[]
+GPClub,1.32,December 2018[308],,South Korea,,[]
+Corgi,1.3,May 2026[388],Financial technology,United States,"Nico Laqua, Emily Yuan","['male', 'female']"
+DistroKid,1.3,August 2021[389],Music,United States,,[]
+ETCP,1.3,October 2016[183],,China,,[]
+Feedzai,1.3,March 2021[390],Artificial intelligence,Portugal / United States,Nuno Sebastião,['male']
+G2,1.3,June 2021[391],Technology,United States,"Tim Handorf, Godard Abel, Matt Gorniak, Mark Myers, Mike Wheeler","['male', 'male', 'male', 'male', 'male']"
+Innovaccer,1.3,February 2021[392],Health care,India / United States,"Abhinav Shashank, Kanav Hasija, Sandeep Gupta","['male', 'male', 'male']"
+Konfio,1.3,September 2021[393],Financial services,Mexico,,[]
+Kr Space,1.3,June 2018[183],,China,,[]
+Yugabyte,1.3,October 2021[394],Database management,United States,,[]
+Cart.com,1.27,June 2023[395],Commerce and logistics,United States,"Omair Tariq, Remington Tonar[396]","['male', 'male']"
+Incode,1.25,December 2021[397],Technology,Mexico,,[]
+Applied Intuition,1.25,October 2020[398],Software,United States,,[]
+BigID,1.25,May 2018[399],Cybersecurity,Israel / United States,,[]
+Deel,17.3,October 2025[400],,Israel / United States,,[]
+ezCater,1.25,April 2019[401],,United States,"Stefania Mallett, Briscoe Rodgers","['female', 'male']"
+Iwjw,1.25,November 2015[183],,China,,[]
+Marshmallow,1.25,September 2021[402],Insurance,United Kingdom,,[]
+Rec Room,1.25,March 2021[403],Video games,United States,,[]
+Spiber,1.22,September 2021[404],Biotechnology,Japan,,[]
+Insider,1.22,March 2022[405],AI-poweredSaaS,Turkey,Hande Çilingir,['female']
+Merama,1.2,December 2021[406],E-commerce,Mexico,,[]
+Ada,1.2,May 2021[407],Software,Canada,,[]
+Alation,1.2,June 2021[408],Software,United States,"Satyen Sangani, Aaron Kalb, Feng Niu, and Venky Ganti","['male', 'male', 'male', 'male']"
+Axonius,1.2,March 2021[409],Cybersecurity,Israel / United States,,[]
+CarDekho,1.2,October 2021[410],Marketplace,India,,[]
+Copado,1.2,September 2021,Software,Spain / United States,,[]
+Dental Monitoring,1.2,October 2021[411],Healthcare,France,,[]
+Deutsche Health,1.2,August 2020[183],Biotech/Medical,Germany/Russia,,[]
+Droom,1.2,July 2021[412],Marketplace,India,Sandeep Aggarwal,['male']
+Fair,1.2,December 2018[413],,United States,,[]
+FloQast,1.2,July 2021[414],Software,United States,,[]
+Forto,1.2,June 2021[415],Software,Germany,,[]
+Intercom,1.2,March 2018[416],Software,United States,,[]
+Kyriba,1.2,October 2021[417],Cloud software,France,,[]
+MindTickle,1.2,August 2021[418],Software as a service,India,,[]
+MyGlamm,1.2,November 2021[419],E-commerce,India,,[]
+Triple-1,1.2,January 2023[318],Blockchain,Japan,,[]
+Rohlik,1.2,June 2021[420],Retail,Czech Republic,,[]
+upGrad,1.2,August 2021[421],Educational technology,India,,[]
+Workhuman,1.2,June 2020[422],Software,Ireland,,[]
+Sysdig,1.18,April 2021[423],Cybersecurity,United States,,[]
+Starcloud,1.1,March2026(2026-03)[424],Orbital Data Centers,United States,"Philip Johnston, Ezra Feilden, Adi Oltean","['male', 'male', 'male']"
+Deputy,1.1,March 2024[425],Workforce management software,Australia,Ashik Ahmed and Steve Shelley,"['male', 'male']"
+"3DOM Alliance, Inc.",1.1,January 2023[318],Battery manufacturing,Japan,,[]
+Acko,1.1,October 2021[426],Insurance,India,,[]
+Apna,1.1,September 2021[427],,India,,[]
+Carousell,1.1,September 2021[428],Marketplace,Singapore,,[]
+CoinDCX,1.1,August 2021[429],Cryptocurrency,India,"Sumit Gupta, Neeraj Khandelwal","['male', 'male']"
+Purplle,1.1,June 2022[430],E-Commerce,India,"Manish Taneja, Rahul Dash","['male', 'male']"
+GlobalBees,1.1,December 2021[431],,India,,[]
+Luoji Siwei,1.1,September 2017[183],,China,,[]
+Nexthink,1.1,February 2021[432],Technology,Switzerland,,[]
+Sisense,1.1,January 2020[433],Business intelligence,Israel / United States,,[]
+Drools,1.1,January 2023[434],Pet food,India,,[]
+SmartNews,1.1,August 2019[435],,Japan,,[]
+Substack,1.1,July 2025[436],Media and Publishing,United States,"Chris Best, Hamish McKenzie, Jairaj Sethi","['male', 'male', 'male']"
+Trax,1.1,May 2019[437],,Singapore / Israel,,[]
+Virta Health,1.1,December 2020[438],Healthcare,United States,,[]
+YouniteD,1.1,December 2022[439],Financial services,France,"Charles Égly, Geoffroy Guigou","['male', 'male']"
+Benevity,1.1,December 2020[440],Software as a service,Canada,Bryan de Lottinville,['male']
+Zego,1.1,March 2021[441],Insurance,United Kingdom,,[]
+Substrate,1+,October 2025[442],Semiconductor,United States,James Proud,['male']
+Character.ai,1+,March2023(2023-03)[443],Artificial Intelligence,United States,"Daniel De Freitas, Noam Shazeer","['male', 'male']"
+Pentera,1+,January 2022[444],Cybersecurity,Israel,"Arik Liberzon, Arik Faingold[445]","['male', 'male']"
+"VectorBuilder, Inc.",1+,"July 26, 2023[446]",Biotechnology,United States,"Bruce Lahn, Kristofer Mussar","['male', 'male']"
+Emplifi,1+,March 2022[447],Technology,"United States, United Kingdom andEurope",,[]
+Gymshark,1+,August 2020[448],Sportswear,United Kingdom,"Ben Francis, Lewis Morgan","['male', 'male']"
+Kopi Kenangan,1+,December 2021[449],Coffee shop,Indonesia,,[]
+Clara,1+,December 2021[450],Financial technology,Mexico,,[]
+ClassDojo,1.25,July 2022[451],Education Technology,United States,"Sam Chaudhary, Liam Don","['male', 'male']"
+58 Daojia,1+,October 2015[183],,China,,[]
+Acronis,1+,September 2019[452],Software,Singapore / Switzerland,,[]
+Aircall,1+,October 2021[453],Cloud,France,,[]
+Ajaib,1+,October 2021[454],Financial technology,Indonesia,,[]
+Amber Group,1+,June 2021[455],Cryptocurrency,Hong Kong,,[]
+AppDirect,1+,October 2015[456],,United States,,[]
+Aqua Security,1+,March 2021[457],Cloud computing,Israel,,[]
+Asia First Media,1+,September 2019[458],Media,Japan,,[]
+Assent Compliance,1+,January 2022[459],Supply chain management,Canada,,[]
+Krutrim,1+,26 January 2024[460],AI / GPT,India,,[]
+Beibei,1+,June 2016[183],E-commerce,China,,[]
+Back Market,1+,October 2021[461],E-commerce,France,,[]
+Bluecore,1+,August 2021[462],E-commerce,United States,,[]
+Bringg,1+,June 2021[463],Logistics,Israel,,[]
+"Cadence Solutions, Inc.",1+,December 2021[464],Healthcare,United States,Chris Altchek,['male']
+Carro,1+,June 2021[465],Marketplace,Singapore,,[]
+Chubao Technology,1+,May 2017[183],,China,,[]
+Dt Dream,1+,June 2017[183],,China,,[]
+Dunamu,1+,Jul 2021[466],Financial technology,South Korea,,[]
+DXY,1+,April 2018[183],,China,,[]
+Earnix,1+,February 2021[467],Financial technology,Israel,,[]
+Ebanx,1+,October 2019[468],Financial services,Brazil,,[]
+EMPG,1+,June 2020[469],Real estate technology,United Arab Emirates,,[]
+eSentire,1+,Feb 2022[470],Cybersecurity,Canada / United States,,[]
+Flash Express,1+,June 2021[471][472],Logistics,Thailand,,[]
+Flexe,1+,July 2022[473],Logistics,United States,Karl Siebrecht,['male']
+Flutterwave,1+,March 2021[474],Financial technology,Nigeria / United States,,[]
+FreshBooks,1+,August 2021[475],Accounting software,Canada,,[]
+FXiaoKe,1+,January 2018[183],,China,,[]
+Gelato,1+,August 2021[476],,Norway,,[]
+GeoComply,1+,March 2021[477],Cybersecurity,Canada,,[]
+GetYourGuide,1+,May 2019[478],Travel,Germany,,[]
+Glance,1+,December 2020[479],Artificial intelligence,India,,[]
+Go1,1+,July 2021[480],Education,Australia,,[]
+Gousto,1+,November 2020,Meal kit,United Kingdom,,[]
+Grover,1+,April 2022[481],E-commerce,Germany,Michael Cassau,['male']
+Hailo,1+,June 2021[482],Electronics,Israel,,[]
+HighRadius,1+,January 2020[483],Software as a service,India / United States,,[]
+Flo Health,1+,July 2024[7],Health Technology,"Lithuania, Belarus","Dmitry Gurski,Yuri Gurski","['male', 'male']"
+Huikedu Group,1+,May 2018[183],,China,,[]
+iCarbonX,1+,July 2016[183],Healthcare,China,,[]
+IFood,1+,November 2018[484],Food delivery,Brazil,,[]
+IGAWorks,1+,Aug 2021[485],Advertising technology,South Korea,,[]
+Improbable,1+,May 2017[486],Cloud computing,United Kingdom,,[]
+Infobip,1+,July 2020[487],Cloud communications,Croatia,"Silvio Kutić, Izabel Jelenić, Roberto Kutić","['male', 'male', 'male']"
+Injective,1+,April 2021[488],Financial technology,United States,"Eric Chen, Albert Chon","['male', 'male']"
+InMobi,1+,May 2017[489],Internet,India,"Naveen Tewari, Mohit Saxena, Amit Gupta and Abhay Singhal","['female', 'male', 'male', 'male']"
+Ivalua,1+,May 2020[490],,France,,[]
+Jollychic,1+,May 2018[183],,China,,[]
+JoyTunes,1+,June 2021[491],Music,Israel,,[]
+Just Salad,1+,February 2025[492],Restaurants,United States,Nick Kenner,['male']
+Kendra Scott LLC,1+,December 2016[493],Jewelery,United States,Kendra Scott,['female']
+Kitopi,1+,July 2021[494],Ghost kitchen,United Arab Emirates,,[]
+Klook,1+,April 2019[495][496],,Hong Kong,,[]
+LetsGetChecked,1+,June 2021[497],Healthcare,Ireland,,[]
+Lydia,1+,August 2022[127],Finance,France,,[]
+LinkSure Network (WiFi Master Key),1+,January 2015[183],,China,,[]
+LMAX Group,1+,July 2021[498],Financial technology,United Kingdom,,[]
+Locus Robotics,1+,February 2021[499],Robotics,United States,,[]
+Loft Brazil Technology,1+,January 2020[500],Real estate,Brazil,,[]
+Lunar,1+,July 2021[501],Financial technology,Denmark,,[]
+Loggi,1+,June 2019,Logistics,Brazil,,[]
+Lookout,1+,August 2014[502],Cybersecurity,United States,,[]
+MadeiraMadeira,1+,January 2021[503],Furniture,Brazil,,[]
+Maimai,1+,August 2018[504],,China,,[]
+Masterworks,1+,November 2025[505],Financial Technology,United States,Scott Lynn,['male']
+Matrixport,1+,August 2021[506],Cryptocurrency,Singapore,,[]
+Meero,1+,June 2019[507],Internet,France,,[]
+Mensa Brands,1+,November 2021[508],E-commerce,India,,[]
+Mia.com,1+,October 2016[183],,China,,[]
+MindMaze,1+,February 2016[509],,Switzerland,,[]
+MobileCoin,1+,August 2021[510],Cryptocurrency,United States,,[]
+Mofang Apartment,1+,April 2016[183],,China,,[]
+Moglix,1+,May 2021[511],E-commerce,India / Singapore,Rahul Garg,['male']
+Moka,1+,November 2021[512],Human resource management,China,,[]
+Morning Consult,1+,June 2021[513],,United States,,[]
+Ninja Van,1+,September 2021[514],Logistics,Singapore,,[]
+Nium,1+,July 2021[515],Financial technology,Singapore,,[]
+NoBroker,1+,November 2021[516],,India,"Akhil Gupta, Amit Agarwal, Saurabh Garg","['male', 'male', 'male']"
+Kredivo,1+,January 2022,Financial technology,Indonesia,,[]
+OCSiAl,1+,March 2019[517],Nanotechnology,Luxembourg,,[]
+Opn (Synqa),1+,May 2022[518],Financial technology,Japan,"Jun Hasegawa, Ezra Don Harinsut","['male', 'male']"
+OrCam,1+,February 2018[519],Health,Israel,,[]
+PandaDoc,1+,September 2021[520],Software as a service,United States,"Mikita Mikado, Sergey Barysiuk","['female', 'male']"
+Pantheon Systems,1+,July 2021[521],WebOps,United States,,[]
+PatSnap,1+,March 2021[522],Intellectual property,Singapore,,[]
+Picsart,1+,August 2021[523],Graphic design,Armenia / United States,"Hovhannes Avoyan, Artavazd Mehrabyan, Mikayel Vardanyan","['male', 'male', 'male']"
+Playco,1+,September 2020[524],Mobile gaming,Japan,,[]
+Redis Labs,1+,August 2020[525],Software,Israel / United States,,[]
+REEF Technology,1+,November 2020[526],Real estate technology,United States,,[]
+Quizlet,1+,May 2020[527],Educational technology,United States,,[]
+Revolution Precrafted,1+,October 2017[528],Architecture,Philippines,,[]
+Sennder,1+,January 2021[529],Logistics,Germany,,[]
+Shift Technology,1+,May 2021[530],Artificial intelligence,France,,[]
+Shippo,1+,June 2021[531],,United States,"Laura Behrens Wu, Simon Kreuz","['female', 'male']"
+Sift,1+,April 2021[532],Fraud prevention,United States,,[]
+Slice,1+,November 2021[533],Financial technology,India,,[]
+SmartAsset,1+,June 2021[534],Financial technology,United States,,[]
+SmartMore,1+,June 2021[535],Artificial intelligence,China,,[]
+Snapdeal,1+,May 2017[5],E-commerce,India,"Rohit Bansal, Kunal Bahl","['male', 'male']"
+Spendesk,1+,August 2022[127],Financial software,France,,[]
+Splashtop,1+,January 2021[536],Software,United States,,[]
+Staffbase,1.1,March 2022[537],Software as a service,Germany,"Frank Wolf, Lutz Gerlach, Martin Böhringer","['male', 'male', 'male']"
+Swile,1+,October 2021[538],Financial services,France,,[]
+Synthesia,1+,June 2023[539],Artificial intelligence,United Kingdom,"Lourdes Agapito,Matthias Niessner, Victor Riparbelli, Steffen Tjerrild","['female', 'male', 'male', 'male']"
+Taxfix,1+,April 2022[540],Fintech / Tax software,Germany,"Mathis Büchi, Lino Teuteberg","['male', 'male']"
+Tekion,1+,October 2020[541][542],Software as a service,United States,,[]
+Tenstorrent,1+,May 2021[543],Semiconductors,Canada,,[]
+Tezign,1+,October 2021[544],Software,China,,[]
+Tongdun Technology,1+,October 2017[183],,China,,[]
+Tractable,1+,June 2021[545],Artificial intelligence,United Kingdom,,[]
+Tresata,1+,October 2018[546],,United States,,[]
+TrueLayer,1+,September 2021[547],Financial technology,United Kingdom,,[]
+Trustly,1+,June 2020[548],Financial technology,Sweden,,[]
+Turo,1+,July 2019[549],Car sharing,United States,,[]
+Vagaro,1+,November 2021[550],Software as a service,United States,Fred Fady Helou,['male']
+VerSe Innovation,1+,December 2020[551],Technology,India,Virendra Gupta,['male']
+Visier,1+,June 2021[552],Technology,Canada,,[]
+volocopter,1+,March 2021[553],Transportation,Germany,,[]
+Vox Media,1+,August 2015[554],Digital media,United States,,[]
+VTS,1+,May 2019[555],,United States,,[]
+Wacai.com,1+,July 2018[183],,China,,[]
+WeLab,1+,December 2019[556],Financial technology,Hong Kong,,[]
+Womai,1+,October 2015[183],,China,,[]
+Xendit,1+,September 2021[557],Financial technology,Indonesia,,[]
+Xiaozhu.com,1+,November 2017[183],,China,,[]
+YH Global,1+,September 2017[183],Telecommunications,China,,[]
+Yidian Zixun,1+,October 2017[183],,China,,[]
+Yitu Technology,1+,July 2018[183],,China,,[]
+YunQuNa,1+,May 2021[558],Logistics,China,,[]
+Zenoti,1+,December 2020[559],Software company,India / United States,,[]
+Zhuanzhuan,1+,April 2017[183],,China,,[]
+Zuoyebang,1+,July 2018[183],,China,,[]
+eFishery,1+,May 2023,Aquaculture,Indonesia,,[]
+LINE MAN Wongnai,1+,September 2022[183],"E-commerce,Food delivery",Thailand,,[]
+ReliaQuest,1+,December 2021[560],Cybersecurity,United States,Brian Murphy,['male']
+DANA,1+,September 2022,Financial technology,Indonesia,,[]
+Nagad,1+,July 2023[561][562],Mobile financial services,Bangladesh,Tanvir A Mishuk,['male']
+Ecovadis,1,August 2022[127],"Environmental, social, and corporate governance",France,,[]
+Scandit,1,February 2022[563],Software,Switzerland,"Samuel Mueller, Christian Floerkemeier, Christof Roduner","['male', 'male', 'male']"
+BlueVoyant,1+,February 2022[564],Cybersecurity,United States,"Jim Rosenthal, Chris Meissner, Jim Thompson, and Arun Sankaran","['male', 'male', 'male', 'male']"
+Payhawk,1+,March 2022[565],Financial technology,Bulgaria,,[]
+Voi,1+,April 2022[92],,Sweden,,[]
+Neo Financial,1,May 2022[566],Financial technology,Canada,"Andrew Chau, Jeff Adamson, Kris Read","['male', 'male', 'male']"
+Stytch,1,November 2021[567],Cybersecurity,United States,"Reed McGinley-Stempel, Julianna Lamb","['male', 'female']"
+Epassi,1+,December 2023[568],Employee benefits platform,Finland,Risto Virkkala,['male']
+HMD Global,1+,August 2020[569],Mobile Devices,Finland,Jean-Francois Baril,['male']
+IQM,1,July 2022[570],Quantum Computing,Finland,"Jan Goetz, Mikko Möttönen, Kuan Yen Tan, Juha Vartiainen","['male', 'male', 'male', 'male']"
+Hostaway,1,December 2024[571],Vacation rental software platform,Finland,"Marcus Räder, Saber Kordestanchi, Mikko Nurminen","['male', 'male', 'male']"
+Papara,1,July 2023[572],Fintech,Turkey,Ahmed Faruk Karslı,['male']
+MNT-Halan,1+,February 2023[573][574],Fintech,Egypt,"Mounir Nakhla, Ahmed Mohsen","['male', 'male']"
