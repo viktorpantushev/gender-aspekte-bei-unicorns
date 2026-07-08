@@ -27,6 +27,7 @@ Die Scraping-Logik liegt in [src/scrape_wiki.py](src/scrape_wiki.py).
 ### 1. Abhängigkeiten installieren
 
 ```bash
+git clone https://github.com/viktorpantushev/gender-aspekte-bei-unicorns.git
 pip install -r requirements.txt
 ```
 
