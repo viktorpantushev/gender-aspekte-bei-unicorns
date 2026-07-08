@@ -59,7 +59,6 @@ Das Projekt erzeugt unter anderem:
 
 - Rohdaten zu aktuellen und vergangenen Unicorns
 - Daten mit Geschlechterklassifikation
-- aggregierte CSV-Dateien für Länder, Branchen und Sektoren
 - Zwischenstände in [data](data) und [processed_data](processed_data)
 
 ## Hinweise
