@@ -14,50 +14,6 @@ Die Analyse beantwortet die Frage, wie die Geschlechterverteilung bei Unicorn-Gr
 4. Unsichere oder unbekannte Einträge nachverarbeiten
 5. Ergebnisse als CSV-Dateien speichern und weiter analysieren
 
-## Verwendete Werkzeuge
-
-- Python
-- pandas
-- requests
-- BeautifulSoup
-- gender-guesser
-- guess-indian-gender
-- Jupyter Notebook
-- matplotlib / plotly
-
-## Projektstruktur
-
-```text
-.
-├── data/
-│   ├── countries_gender_counts.csv
-│   ├── current_unicorns.csv
-│   ├── current_unicorns_with_gender.csv
-│   ├── past_unicorns.csv
-│   ├── past_unicorns_with_gender.csv
-│   └── sectors_gender_counts.csv
-├── processed_data/
-│   ├── countries_gender_counts.csv
-│   ├── current_unicorns.csv
-│   ├── current_unicorns_rescued.csv
-│   ├── current_unicorns_with_gender.csv
-│   ├── past_unicorns.csv
-│   ├── past_unicorns_rescued.csv
-│   ├── past_unicorns_with_gender.csv
-│   └── sectors_gender_counts.csv
-├── src/
-│   ├── company_founders.py
-│   ├── filter_df.py
-│   ├── get_gender_data.py
-│   ├── rescue_unknowns.py
-│   └── scrape_wiki.py
-├── gender_aspekte_bei_unicorns.ipynb
-├── current_unicorns.csv
-├── past_unicorns.csv
-├── requirements.txt
-└── readme.md
-```
-
 ## Datenquellen
 
 Die Basisdaten kommen aus der Wikipedia-Liste zu Unicorn-Startups:
@@ -104,7 +60,3 @@ Das Projekt erzeugt unter anderem:
 - Die Geschlechterzuordnung basiert auf Namen und öffentlich verfügbaren Informationen. Daher sind die Ergebnisse als Schätzung zu verstehen.
 - Unsichere Fälle werden bewusst als "unknown" behandelt, um Fehlklassifikationen zu vermeiden.
 - Web-basierte Nachschlagevorgänge können je nach Netzwerk und Rate-Limits langsamer sein.
-
-## Optionaler Hilfs-Workflow
-
-Zusätzlich gibt es in [src/company_founders.py](src/company_founders.py) einen kleinen Helfer, der Unternehmensnamen über Wikidata nach Gründerinnen und Gründern durchsucht.
