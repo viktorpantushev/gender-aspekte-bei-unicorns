@@ -30,6 +30,7 @@ Klonen
 ```bash
 git clone https://github.com/viktorpantushev/gender-aspekte-bei-unicorns.git
 ```
+In gender-aspekte Ordner reingehen.
 
 Und installieren
 ```bash
