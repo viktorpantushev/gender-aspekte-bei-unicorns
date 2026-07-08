@@ -64,5 +64,4 @@ Das Projekt erzeugt unter anderem:
 ## Hinweise
 
 - Die Geschlechterzuordnung basiert auf Namen und öffentlich verfügbaren Informationen. Daher sind die Ergebnisse als Schätzung zu verstehen.
-- Unsichere Fälle werden bewusst als "unknown" behandelt, um Fehlklassifikationen zu vermeiden.
 - Web-basierte Nachschlagevorgänge können je nach Netzwerk und Rate-Limits langsamer sein.
